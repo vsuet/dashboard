@@ -1,0 +1,17 @@
+name: lint
+on: 
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+ linters:
+  name: stylelint
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Check out code
+      uses: actions/checkout@v3
+      
+    - name: Run linting
+      uses: actions-hub/stylelint@master
+      
