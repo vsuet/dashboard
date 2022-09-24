@@ -1,4 +1,4 @@
-name: lint
+name: lint css
 on: 
   pull_request:
     branches: [ "main" ]
