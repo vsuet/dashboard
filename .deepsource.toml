@@ -1,5 +1,1 @@
 version = 1
-
-[[analyzers]]
-name = "secrets"
-enabled = true
