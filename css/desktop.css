@@ -10,6 +10,10 @@
     padding-top: 20px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .sidenav a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
@@ -28,10 +32,7 @@
     margin-bottom: 100px;
 }
 
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-}
+
 
 .logo {
     font-size: 30px;
@@ -39,17 +40,17 @@
     padding: 6px 8px 6px 16px;
 }
 
-/* Cards */
-
 .card {
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
     transition: 0.3s;
-    width: 30%;
+    width: 100%;
     border-radius: 14px;
     margin: 10px;
     float: left;
     max-width: 300px;
     max-height: 400px;
+    justify-self: center;
+    align-self: center;
 }
 
 .card:hover {
@@ -66,7 +67,7 @@
 }
 
 .footer {
-    margin-left: 21%; /* Same as the width of the sidenav */
+    margin-left: 21%;
     position: fixed;
     left: 0;
     bottom: 0;
@@ -89,28 +90,24 @@
 }
 
 .miniCardHolder {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     max-width: 100%;
 }
 
 .cardHolder {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
 }
 
 .bigCardHolder {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
 }
+
 
 .bigCardHeader {
     display: flex;
@@ -133,3 +130,63 @@ button:hover {
     border: 1px solid #ffffff;
 }
 
+@media screen and (max-width: 500px) {
+    .miniCardHolder {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .cardHolder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        z-index: 7;
+        position: fixed;
+        left: 8px;
+        top: 8px;
+    }
+    .toggle {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .toggle:checked ~ .sidenav {
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+    .sidenav {
+        width: 0;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .footer {
+        margin-left: 0px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .miniCardHolder {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .bigCardHolder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bigCardHolder .card {
+        max-width: 600px;
+        max-height: 400px;
+    }
+}
