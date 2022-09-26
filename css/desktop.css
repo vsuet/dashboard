@@ -96,7 +96,7 @@
     max-width: 100%;
 }
 
-.cardHolder {
+.card-holder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
