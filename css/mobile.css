@@ -1,0 +1,18 @@
+.picture-o > img {
+    width: 60px;
+    height: 60px;
+}
+
+.sm-item {
+    width: 48%;
+    margin: 15px 0;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: none;
+}
