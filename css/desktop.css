@@ -10,8 +10,30 @@
     left: 15px;
 }
 
+.items-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.items-block-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.picture-two > img{
+    height: 115px;
+}
+
 .text-tab {
-    font-size: 8px;
+    font-size: 12px;
     margin-bottom: 0px;
     text-align: right;
     margin-right: 10px;

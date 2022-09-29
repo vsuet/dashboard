@@ -16,8 +16,12 @@
 }
 
 .sm-item {
-    width: 48%;
+    width: 100%;
     margin: 15px 0;
+}
+
+.items-block-line {
+    margin-top: 40px;
 }
 
 .icon >img {
@@ -40,10 +44,6 @@
     height: 25px;
 }
 
-.sm-item {
-    width: 100%;
-}
-
 .text-tab {
     font-size: 12px;
     margin-bottom: 0px;
@@ -56,4 +56,21 @@
     margin: 0px;
     text-align: right;
     padding-right: 10px;
+}
+
+.sm-item-two {
+    width: 100%;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.picture-two > img{
+    width: 92%;
+    height: 210px;
+}
+
+.sm-item-two {
+    margin-bottom: 50px;
 }

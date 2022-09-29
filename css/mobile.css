@@ -3,6 +3,19 @@
     height: 60px;
 }
 
+.sm-item-two {
+    width: 32%;
+}
+
+.picture-two > img{
+    width: 80%;
+    height: 92px;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
 .sm-item {
     width: 48%;
     margin: 15px 0;
@@ -20,6 +33,12 @@
 .close {
     display: none;
 }
+
+.num-two-line {
+    font-size: 14px;
+}
+
+
 
 /*.left-content.active {
     display: none;

@@ -3,6 +3,10 @@
     margin-bottom: 25px;
 }
 
+.sm-item-two {
+    width: 32%;
+}
+
 .item-body > * {
     width: 74%;
     justify-content: space-between;
@@ -19,9 +23,18 @@
     left: 20px;
 }
 
+.picture-two > img{
+    width: 88%;
+    height: 190px;
+    position: relative;
+    bottom: 20px;
+}
+
 .item-footer {
-    padding-left: 30px;
-    padding-top: 3px;
+    font-size: 12px;
+    padding: 10px 0;
+    padding-left: 18px;
+    margin-top: 10px;
     border-top: 1px solid #000;
 }
 
@@ -32,9 +45,23 @@
     margin-right: 10px;
 }
 
+.text-two-line {
+    font-size: 18px;
+    margin: 0 30px;
+}
+
+.num-two-line {
+    font-size: 14px;
+    margin: 0 30px;
+}
+
 .num {
     font-size: 28px;
     margin: 0px;
     text-align: right;
     padding-right: 10px;
+}
+
+.item-footer {
+    padding-left: 25px;
 }

@@ -10,14 +10,38 @@
     z-index: 1000;
 }
 
+.items-block-line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
 .picture-o > img {
     width: 60px;
     height: 60px;
 }
 
+.picture-two > img{
+    width: 80%;
+    height: 92px;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.sm-item-two {
+    width: 32%;
+}
+
 .sm-item {
     width: 48%;
     margin: 15px 0;
+}
+
+.num-two-line {
+    font-size: 14px;
 }
 
 .icon >img {

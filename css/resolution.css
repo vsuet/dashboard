@@ -10,9 +10,37 @@
     z-index: 1000;
 }
 
+.items-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
 .picture-o > img {
     width: 60px;
     height: 60px;
+}
+
+.sm-item-two {
+    width: 100%;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.picture-two > img{
+    width: 92%;
+    height: 210px;
+}
+
+.sm-item-two {
+    margin-bottom: 50px;
+}
+
+.items-block-line {
+    margin-top: 40px;
 }
 
 .sm-item {
