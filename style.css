@@ -1,0 +1,5 @@
+@import url(min1000.css) (min-device-width:1000px);
+@import url(width800_1000.css) (min-device-width:800px) and (max-device-width:999px);
+@import url(width650_800.css) (min-device-width:650px) and (max-device-width:799px);
+@import url(width500_650.css) (min-device-width:500px) and (max-device-width:649px);
+@import url(max500.css) (max-device-width:499px);
