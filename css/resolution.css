@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .picture-o > img {
@@ -22,8 +22,9 @@
     height: 60px;
 }
 
-.sm-item-two {
+.md-item {
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .picture-two {
@@ -33,10 +34,6 @@
 .picture-two > img{
     width: 92%;
     height: 210px;
-}
-
-.sm-item-two {
-    margin-bottom: 50px;
 }
 
 .items-block-line {
@@ -80,4 +77,22 @@
     margin: 0px;
     text-align: right;
     padding-right: 10px;
+}
+
+.lg-item {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gg-block {
+    margin-left: 30px;
+}
+
+.gg-close-o {
+    margin-right: 25px;
+}
+
+.btn-table {
+    padding: 15px 0;
+    margin-top: -25px;
 }

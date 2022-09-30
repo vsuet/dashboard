@@ -3,7 +3,7 @@
     height: 60px;
 }
 
-.sm-item-two {
+.md-item {
     width: 32%;
 }
 
@@ -38,8 +38,29 @@
     font-size: 14px;
 }
 
+.left-content.active {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    background: #fff;
+    z-index: 1000;
+}
 
+.lg-item {
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 25px;
+}
 
-/*.left-content.active {
-    display: none;
-}*/
+.gg-block {
+    margin-left: 100px;
+}
+
+.footer {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.left-content {
+    height: 176vh;
+}

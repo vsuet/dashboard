@@ -31,8 +31,9 @@
     margin-bottom: -12px;
 }
 
-.sm-item-two {
+.md-item {
     width: 32%;
+    margin-bottom: 20px;
 }
 
 .sm-item {
@@ -62,4 +63,8 @@
 .close > img{
     width: 25px;
     height: 25px;
+}
+
+.gg-block {
+    margin-left: 140px;
 }

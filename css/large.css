@@ -3,8 +3,14 @@
     margin-bottom: 25px;
 }
 
-.sm-item-two {
+.md-item {
     width: 32%;
+}
+
+.items-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .item-body > * {
@@ -64,4 +70,29 @@
 
 .item-footer {
     padding-left: 25px;
+}
+
+.buttons {
+    font-size: 12px;
+}
+
+.text-three-table {
+    font-size: 14px;
+}
+
+.btn-table {
+    padding: 15px 0;
+    margin-top: -20px;
+}
+
+.gg-block {
+    margin-left: 140px;
+}
+
+table {
+    font-size: 14px;
+}
+
+.left-content {
+    height: 123vh;
 }

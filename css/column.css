@@ -17,7 +17,7 @@
 
 .sm-item {
     width: 100%;
-    margin: 15px 0;
+    margin: 25px 0;
 }
 
 .items-block-line {
@@ -58,8 +58,9 @@
     padding-right: 10px;
 }
 
-.sm-item-two {
+.md-item {
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .picture-two {
@@ -71,6 +72,15 @@
     height: 210px;
 }
 
-.sm-item-two {
-    margin-bottom: 50px;
+.lg-item {
+    width: 100%;
+    margin: 40px 0;
+}
+
+.gg-block {
+    margin-left: 10px;
+}
+
+.items-block {
+    margin-top: 0px;
 }

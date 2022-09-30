@@ -54,3 +54,20 @@
 .picture-o {
     width: 25%;
 }
+
+.lg-item {
+    width: 48%;
+    margin: 10px 0;
+}
+
+.gg-block {
+    margin-left: 0px;
+}
+
+.gg-close-o {
+    margin-right: 8px;
+}
+
+.left-content {
+    height: 128vh;
+}
