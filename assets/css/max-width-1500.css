@@ -1,0 +1,10 @@
+@media (max-width: 1500px) {
+    .menu_container {
+        display: none;
+    }
+
+    .main_container-title-hidden_links .hidden_links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
