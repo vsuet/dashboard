@@ -6,7 +6,6 @@
     display: flex;
     position: absolute;
     flex-direction: column;
-    background: #fff;
     z-index: 1000;
 }
 
@@ -63,13 +62,12 @@
 .close > img{
     width: 25px;
     height: 25px;
+    margin-right: 8px;
+    margin-top: 7px;
 }
 
 .text-tab {
     font-size: 12px;
-    margin-bottom: 0px;
-    text-align: right;
-    margin-right: 10px;
 }
 
 .num {

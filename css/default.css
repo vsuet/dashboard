@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 h1 {
     font-size: 20px;
 }
@@ -49,7 +54,7 @@ h2 {
 
 .right-content {
     width: 100%;
-    background-color: rgb(227, 227, 227);
+    background-color: #e3e3e3;
 }
 
 .header-block {
@@ -115,6 +120,7 @@ h2 {
     margin-bottom: 0px;
     text-align: right;
     margin-right: 10px;
+    margin-top: 10px;
 }
 
 .num {

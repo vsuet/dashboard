@@ -5,8 +5,8 @@
 .left-content.active {
     display: flex;
     position: absolute;
+    background-color: #f1f1f1;
     flex-direction: column;
-    background: #fff;
     z-index: 1000;
 }
 
@@ -58,11 +58,6 @@
     z-index: 1001;
     text-align: right;
     width: 100%;
-}
-
-.close > img{
-    width: 25px;
-    height: 25px;
 }
 
 .gg-block {
