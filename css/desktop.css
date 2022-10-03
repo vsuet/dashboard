@@ -28,7 +28,7 @@
 
 .main {
     margin-left: 20%; /* Same as the width of the sidenav */
-    padding: 0px 10px;
+    padding: 0 10px;
     margin-bottom: 100px;
 }
 
@@ -89,27 +89,27 @@
     padding: 6px 8px 6px 16px;
 }
 
-.miniCardHolder {
+.mini-card-holder {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     flex-direction: row;
     max-width: 100%;
 }
 
-.cardHolder {
+.card-holder {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 100%;
 }
 
-.bigCardHolder {
+.big-card-holder {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 100%;
 }
 
 
-.bigCardHeader {
+.big-card-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -121,7 +121,7 @@ button {
     border-radius: 14px;
     background-color: #000000;
     color : #ffffff;
-    border: 0px solid #ffffff;
+    border: 0 solid #ffffff;
 }
 
 button:hover {
@@ -131,13 +131,13 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
-    .miniCardHolder {
+    .mini-card-holder {
         grid-template-columns: repeat(1, 1fr) !important;
     }
 }
 
 @media screen and (max-width: 650px){
-    .cardHolder {
+    .card-holder {
         grid-template-columns: repeat(1, 1fr);
     }
 }
@@ -173,19 +173,19 @@ button:hover {
         margin-left: 0;
     }
     .footer {
-        margin-left: 0px;
+        margin-left: 0;
         max-width: 100%;
     }
 }
 
 @media screen and (max-width: 1000px){
-    .miniCardHolder {
+    .mini-card-holder {
         grid-template-columns: repeat(2, 1fr);
     }
-    .bigCardHolder {
+    .big-card-holder {
         grid-template-columns: repeat(1, 1fr);
     }
-    .bigCardHolder .card {
+    .big-card-holder .card {
         max-width: 600px;
         max-height: 400px;
     }
