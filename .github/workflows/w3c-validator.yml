@@ -1,8 +1,6 @@
 name: w3c-validator
-on:
-  push:
-    branches: [ main ]
-  pull_request:
+on: pull_request
+
 jobs:
   w3c-validator:
     name: Validate files
@@ -10,7 +8,7 @@ jobs:
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         
       - name: Run Validator
         uses: bucherfa/w3c-validator-action@v0.2
