@@ -1,0 +1,5 @@
+@import "styles/style-1000px.css" screen and (min-width: 1000px);
+@import "styles/style-800px.css" screen and (min-width: 800px) and (max-width: 999px);
+@import "styles/style-650px.css" screen and (min-width: 650px) and (max-width: 799px);
+@import "styles/style-500px.css" screen and (min-width: 500px) and (max-width: 649px);
+@import "styles/style-do500px.css" screen and (max-width: 499px);
