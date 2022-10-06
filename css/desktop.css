@@ -1,0 +1,192 @@
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 20%; /* Same as the width of the sidenav */
+    padding: 0 10px;
+    margin-bottom: 100px;
+}
+
+
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 6px 8px 6px 16px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    border-radius: 14px;
+    margin: 10px;
+    float: left;
+    max-width: 300px;
+    max-height: 400px;
+    justify-self: center;
+    align-self: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.2);
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+}
+
+.footer {
+    margin-left: 21%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 77%;
+    border-top: 1px solid #626262;
+}
+
+.card .textLogo {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 6px 8px 6px 16px;
+}
+
+.mini-card-holder {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.card-holder {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+}
+
+.big-card-holder {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+}
+
+
+.big-card-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+button {
+    border-radius: 14px;
+    background-color: #000000;
+    color : #ffffff;
+    border: 0 solid #ffffff;
+}
+
+button:hover {
+    background-color: #ffffff;
+    color : #000000;
+    border: 1px solid #ffffff;
+}
+
+@media screen and (max-width: 500px) {
+    .mini-card-holder {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+}
+
+@media screen and (max-width: 650px){
+    .card-holder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 800px){
+    .hamburger {
+        display: block;
+        font-size: 40px;
+        z-index: 7;
+        position: fixed;
+        left: 8px;
+        top: 8px;
+    }
+    .toggle {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 60px;
+        height: 60px;
+        opacity: 0;
+        cursor: pointer;
+        z-index: 8;
+    }
+    .toggle:checked ~ .sidenav {
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+    .sidenav {
+        width: 0;
+    }
+    .main {
+        margin-left: 0;
+    }
+    .footer {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .mini-card-holder {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .big-card-holder {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .big-card-holder .card {
+        max-width: 600px;
+        max-height: 400px;
+    }
+}
