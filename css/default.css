@@ -152,10 +152,6 @@ h2 {
     border-top: 1px solid #000;
 }
 
-
-
-
-
 .lg-item {
     width: 48%;
 }
@@ -244,7 +240,6 @@ hr {
     transform: rotate(-45deg)
 }
 
-
 .gg-block {
     background-color: rgb(100, 155, 70);
     margin-right: 10px;
@@ -258,7 +253,7 @@ hr {
     border-radius: 100%;
 }
 
-   .gg-block::before {
+.gg-block::before {
     content: "";
     color: #fff;
     display: block;
