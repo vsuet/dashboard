@@ -306,6 +306,8 @@ hr {
 }
 
 table {
+    width: 90%;
+    height: 60%;
     text-align: center;
     font-size: 12px;
     margin-left: 20px;
