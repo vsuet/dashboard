@@ -1,0 +1,7 @@
+@import url(default.css);
+@import url(column.css) (max-device-width: 500px);
+@import url(resolution.css) (min-device-width: 500px);
+@import url(view.css) (min-device-width: 650px);
+@import url(mobile.css) (min-device-width: 800px);
+@import url(desktop.css) (min-device-width: 1000px);
+@import url(large.css) (min-device-width: 1224px);

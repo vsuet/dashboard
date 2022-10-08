@@ -1,0 +1,96 @@
+.left-content {
+    display: none;
+}
+
+.left-content.active {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.items-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.picture-o > img {
+    width: 60px;
+    height: 60px;
+}
+
+.md-item {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.picture-two > img{
+    width: 92%;
+    height: 210px;
+}
+
+.items-block-line {
+    margin-top: 40px;
+}
+
+.sm-item {
+    width: 48%;
+    margin: 15px 0;
+}
+
+.icon >img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    padding-right: 5px;
+}
+
+.close {
+    position: absolute;
+    z-index: 1001;
+    text-align: right;
+    width: 100%;
+}
+
+.close > img{
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    margin-top: 7px;
+}
+
+.text-tab {
+    font-size: 12px;
+}
+
+.num {
+    font-size: 23px;
+    margin: 0px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.lg-item {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.gg-block {
+    margin-left: 30px;
+}
+
+.gg-close-o {
+    margin-right: 25px;
+}
+
+.btn-table {
+    padding: 15px 0;
+    margin-top: -25px;
+}

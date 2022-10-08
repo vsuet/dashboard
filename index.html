@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <div class="main-content">
+        <div id="left-content" class="left-content">
+            <div class="close" onclick="clickClose()">
+                <img src="png/close.png" alt="">
+            </div>
+            <div class="header-block">
+                <h1>Company</h1>
+            </div>
+            <hr>
+            <div class="buttons-menu">
+                <a href="#" class="button-menu active">Dashboard</a>
+                <a href="#" class="button-menu">User Profile</a>
+                <a href="#" class="button-menu">Maps</a>
+                <a href="#" class="button-menu">Notifications</a>
+                <a href="#" class="button-menu">Support</a>
+            </div>
+        </div>
+        <div class="right-content">
+            <div class="header-block">
+                <span class="icon" onclick="clickBurger()">
+                    <img src="png/burger.png" alt="">
+                </span>
+                <h2>Dashboard</h2>
+            </div>
+            <div class="content-blocks">
+                <div class="items-block">
+                    <div class="sm-item square">
+                        <div class="item-body">
+                            <div class="picture-o">
+                                <img src="png/BD.PNG" alt="BD">
+                            </div>
+                            <div>
+                                <p class="text-tab">Used Space</p>
+                                <p class="num">49/50 GB</p>
+                            </div>
+                        </div>
+                        <div class="item-footer">Get more space...</div>
+                    </div>
+                    <div class="sm-item square">
+                        <div class="item-body">
+                            <div class="picture-o">
+                                <img src="png/home.PNG" alt="home">
+                            </div>
+                            <div>
+                                <p class="text-tab">Revenue</p>
+                                <p class="num">$ 34,245</p>
+                            </div>
+                        </div>
+                        <div class="item-footer">Last 24 Hours</div>
+                    </div>
+                    <div class="sm-item square">
+                        <div class="item-body">
+                            <div class="picture-o">
+                                <img src="png/h.PNG" alt="h">
+                            </div>
+                            <div>
+                                <p class="text-tab">Fixed lssues</p>
+                                <p class="num">75</p>
+                            </div>
+                        </div>
+                        <div class="item-footer">Tracked from Github</div>
+                    </div>
+                    <div class="sm-item square">
+                        <div class="item-body">
+                            <div class="picture-o">
+                                <img src="png/airplane.PNG" alt="airplane">
+                            </div>
+                            <div>
+                                <p class="text-tab">Followers</p>
+                                <p class="num">+ 245</p>
+                            </div>
+                        </div>
+                        <div class="item-footer">lust updated</div>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div  class="md-item square">
+                        <div class="picture-two">
+                            <img src="png/graphGreen.PNG" alt="graph green">
+                        </div>
+                        <div>
+                            <p class="text-two-line">Daliy Sales</p>
+                            <p class="num-two-line">55% increase in today sales</p>
+                        </div>
+                        <div class="item-footer">updated 4 minutes ago</div>
+                    </div>
+                    <div  class="md-item square">
+                        <div class="picture-two">
+                            <img src="png/graphYellow.PNG" alt="graph yellow">
+                        </div>
+                        <div>
+                            <p class="text-two-line">Email Subscriptions</p>
+                            <p class="num-two-line">Last Campaign Performance</p>
+                        </div>
+                        <div class="item-footer">campaign sent 2 days ago</div>
+                    </div>
+                    <div  class="md-item square">
+                        <div class="picture-two">
+                            <img src="png/graphBlue.PNG" alt="graph blue">
+                        </div>
+                        <div>
+                            <p class="text-two-line">Completed Tasks</p>
+                            <p class="num-two-line">Last Campaign Performance</p>
+                        </div>
+                        <div class="item-footer">campaign event 2 days ago</div>
+                    </div>
+                </div>
+                <div class="items-block">
+                    <div class="lg-item square">
+                        <div class="btn-table">
+                            <button class="buttons">Tasks:</button>
+                            <button class="buttons color" >Bugs</button>
+                            <button class="buttons">Website</button>
+                            <button class="buttons">Server</button>
+                        </div>
+                        <div>
+                            <div class="link-click">
+                                <div class="link-click">
+                                    <input type="checkbox" id="click-one">
+                                    <label class="text-three-table" for="click-one"> Sing contract for "What are conference organizers afraid of?"</label>
+                                </div>
+                                <div class="btn">
+                                    <i class="gg-block"></i>
+                                    <i class="gg-close-o"></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="link-click">
+                                <div class="link-click">
+                                    <input type="checkbox" id="click-two">
+                                    <label class="text-three-table" for="click-two"> Sing contract for "What are conference organizers afraid of?"</label>
+                                </div>
+                                <div class="btn">
+                                    <i class="gg-block"></i>
+                                    <i class="gg-close-o"></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="link-click">
+                                <div class="link-click">
+                                    <input type="checkbox" id="click-three">
+                                    <label class="text-three-table" for="click-three"> Sing contract for "What are conference organizers afraid of?"</label>
+                                </div>
+                                <div class="btn">
+                                    <i class="gg-block"></i>
+                                    <i class="gg-close-o"></i>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="link-click">
+                                <div class="link-click">
+                                    <input type="checkbox" id="click-four">
+                                    <label class="text-three-table" for="click-four"> Sing contract for "What are conference organizers afraid of?"</label>
+                                </div>
+                                <div class="btn">
+                                    <i class="gg-block"></i>
+                                    <i class="gg-close-o"></i>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="lg-item square">
+                        <div class="stats">
+                            <p class="employees">Employees Stats</p>
+                            <p class="new-employees">New employees on 19th September, 2019</p>
+                        </div>
+                        <table>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Salary</th>
+                                <th>Country</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dakota Rice</td>
+                                <td>$ 36.738</td>
+                                <td>Niger</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dakota Rice</td>
+                                <td>$ 36.738</td>
+                                <td>Niger</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dakota Rice</td>
+                                <td>$ 36.738</td>
+                                <td>Niger</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>Dakota Rice</td>
+                                <td>$ 36.738</td>
+                                <td>Niger</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="footer">
+                    <div class="foo">
+                        <p class="about"><b>ABOUT</b></p>
+                        <p class="about"><b>BLOG</b></p>
+                        <p class="about"><b>LICENSES</b></p>
+                    </div>
+                    <p>2019 - made with love</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

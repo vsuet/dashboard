@@ -1,0 +1,65 @@
+.picture-o > img {
+    width: 60px;
+    height: 60px;
+}
+
+.md-item {
+    width: 32%;
+}
+
+.picture-two > img{
+    width: 80%;
+    height: 92px;
+}
+
+.picture-two {
+    margin-bottom: -12px;
+}
+
+.sm-item {
+    width: 48%;
+    margin: 15px 0;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    display: none;
+}
+
+.close {
+    display: none;
+}
+
+.num-two-line {
+    font-size: 14px;
+}
+
+.left-content.active {
+    display: flex;
+    position: initial;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.lg-item {
+    width: 100%;
+    margin: 10px 0;
+    margin-top: 25px;
+}
+
+.gg-block {
+    margin-left: 100px;
+}
+
+.footer {
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.left-content {
+    height: 176vh;
+}
