@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>>Dashboard</title>
+</head>
+<body>
+<!Боковое меню>
+<div class="sidebar">
+    <div class="sidebar-brand">
+        <h1><span class="sidebar-company"></span> Company
+            <br>
+        </h1>
+    </div>
+    <hr>
+    <div class="menu">
+        <ul>
+            <li>
+                <a href="#"><span class="dash"></span><img class="menu_icon" src="icon/icon_dashboard.png" alt=""> Dashboard</a>
+            </li>
+            <li>
+                <a href="#"><span class="profile"></span><img class="menu_icon" src="icon/icon_userpofile.png" alt=""> User Profile</a>
+            </li>
+            <li>
+                <a href="#"><span class="maps"></span><img class="menu_icon" src="icon/icon_maps.png" alt=""> Maps</a></li>
+            <li>
+                <a href="#"><span class="notification"></span><img class="menu_icon" src="icon/icon_notification.png" alt=""> Notification</a>
+            </li>
+            <li>
+                <a href="#"><span class="support"></span><img class="menu_icon" src="icon/icon_website.png" alt=""> Support</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="main-content">
+<header>
+        <h2>
+            <label>
+                <span class="bars"></span>
+            </label> <img class="burger_icon" src="icon/icon_burger.png" alt="">
+            Dashboard
+        </h2>
+    </header>
+</div>
+<main>
+    <!Панельки used space, revenue,fixed issues,followers>
+<div class="used-space">
+    <div id="panel">
+        <p style="padding-left: 161px; padding-top: 20px; font-size: 10px">Used Space</p>
+        <span style="padding-left: 123px; padding-top: 20px; font-size: 20px"><b>49/50 GB</b></span>
+        <hr>
+        <br>
+        <img class="icons" src="icon/icon_danger.png" alt=""> Get more space....
+        <div id="box">
+            <img class="icons_box" src="icon/icon_coins.png" alt="">
+        </div>
+    </div>
+</div>
+    <div class="revenue">
+        <div id="panel2">
+            <p style="padding-left: 170px; padding-top: 20px; font-size: 10px">Revenue</p>
+            <span style="padding-left: 140px; padding-top: 20px; font-size: 20px"><b>$34,245</b></span>
+            <hr>
+            <br>
+            <img class="icons" src="icon/icon_calendar.png" alt=""> Last 24 hours....
+            <div id="box2">
+                <img class="icons_box" src="icon/icon_shop.png" alt="">
+            </div>
+    </div>
+    </div>
+    <div class="fixed_issues">
+        <div id="panel3">
+            <p style="padding-left: 161px; padding-top: 20px; font-size: 10px">Fixed Issues</p>
+            <span style="padding-left: 185px; padding-top: 20px; font-size: 25px"><b>75</b></span>
+            <hr>
+            <br>
+            <img class="icons" src="icon/icon_download.png" alt=""> Tracked from Github....
+            <div id="box3">
+                <img class="icons_box" src="icon/icon_sale.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="followers">
+    <div id="panel4">
+        <p style="padding-left: 170px; padding-top: 20px; font-size: 10px">Followers</p>
+        <span style="padding-left: 160px; padding-top: 20px; font-size: 25px"><b>+245</b></span>
+        <hr>
+        <br>
+        <img class="icons" src="icon/icon_time.png" alt=""> Tracked from Github....
+        <div id="box4">
+            <img class="icons_box" src="icon/icon_paperplane.png" alt="">
+        </div>
+    </div>
+    </div>
+    <!Панельки daily sales, email, completed>
+    <div class="daily_sales">
+        <div id="panel5">
+            <p style="padding-top: 145px; padding-left: 7px; font-size: 25px" >Daily sales</p>
+            <p style="padding-left: 7px">55% increase in today sales</p>
+            <hr>
+            <br>
+            <img class="icons" src="icon/icon_time.png" alt=""> updated 4 minutes ago
+            <div id="box5">
+                <img class="icon_squares" src="icon/icon_squares.png" alt="">
+            </div>
+    </div>
+    </div>
+    <div class="email">
+        <div id="panel6">
+            <p style="padding-top: 145px; padding-left: 7px; font-size: 25px" >Email Subscriptions</p>
+            <p style="padding-left: 7px">Last Campaign Performance</p>
+            <hr>
+            <br>
+            <img class="icons" src="icon/icon_time.png" alt=""> campaign send 2 days ago
+            <div id="box6">
+                <img class="icon_squares" src="icon/icon_squares.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="completed">
+        <div id="panel7">
+            <p style="padding-top: 145px; padding-left: 7px; font-size: 25px" >Completed tasks</p>
+            <p style="padding-left: 7px">Completed tasks</p>
+            <hr>
+            <br>
+            <img class="icons" src="icon/icon_time.png" alt=""> campaign event 2 days ago
+            <div id="box7">
+                <img class="icon_squares" src="icon/icon_squares.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!Панельки tasks, employees>
+
+    <div class="tasks">
+        <div class="tasks_head">
+        <p><span>Tasks:</span>
+            <button class="button"><span><img class="icons_tasks" src="icon/icon_bug.png" alt="">Bugs</span></button>
+            <button class="button"><span><img class="icons_tasks" src="icon/icon_website.png" alt="">Website</span></button>
+            <button class="button"><span><img class="icons_tasks" src="icon/icon_server.png" alt="">Server</span></button></p>
+            </div>
+    <table class="tasks_table">
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox">Sign contract for "What are conference
+                orgabizers afraid of?"
+            </td>
+            <td><button><img class="check_cross" src="icon/icon_сheck.png" alt=""></button></td>
+            <td><button><img class="check_cross" src="icon/icon_cross.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox">Lines From Great Russian Literature?Or E-mails From My Boss?
+            </td>
+            <td> <button><img class="check_cross" src="icon/icon_сheck.png" alt=""></button></td>
+            <td><button><img class="check_cross" src="icon/icon_cross.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox">Sign contract for "What are conference organizes afraid of?"
+            </td>
+            <td> <button><img class="check_cross" src="icon/icon_сheck.png" alt=""></button></td>
+            <td><button><img class="check_cross" src="icon/icon_cross.png" alt=""></button></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" class="checkbox">Sign contract for "What are conference organizes afraid of?"
+            </td>
+            <td> <button><img class="check_cross" src="icon/icon_сheck.png" alt=""></button></td>
+            <td><button><img class="check_cross" src="icon/icon_cross.png" alt=""></button></td>
+        </tr>
+    </table>
+    </div>
+
+    <div class="stats">
+        <div class="stats_head">
+        <p>Employess Stats</p>
+        <p> New employees on 19th September, 2019</p>
+        </div>
+    <table class="table_stats">
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Country</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td>1</td>
+            <td>Dakota Rice</td>
+            <td>$36,738</td>
+            <td>Niger</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dakota Rice</td>
+            <td>$36,738</td>
+            <td>Niger</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dakota Rice</td>
+            <td>$36,738</td>
+            <td>Niger</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Dakota Rice</td>
+            <td>$36,738</td>
+            <td>Niger</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+    <hr>
+    <footer>
+        <p>ABOUT</p>
+        <p>BLOG</p>
+        <p>LICENSES</p>
+        <p class="footer_right">2019 - made with love</p>
+    </footer>
+</main>
+</body>
+</html>
