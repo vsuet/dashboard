@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.color-pink {
+    background-color: #c32057;
+}
+
+.color-yellow {
+    background-color: #d89e23;
+}
+
+.color-blue {
+    background-color: #274d96;
+}
+
+.color-green {
+    background-color: #468a01;
+}
+
+.content {
+    width: calc(100% - 194px);
+    position: relative;
+    left: 194px;
+    display: grid;
+    grid-template-columns: 2% 96% 2%;
+    grid-template-areas:". main ."
+    ". footer footer";
+}
+
+header {
+    position: fixed;
+    margin-right: 5px;
+}
+
+h2 {
+    font-size: 16pt;
+    padding: 25px;
+}
+
+nav > ul {
+    margin-top: 30px;
+}
+
+nav > ul > li {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: minmax(40px, auto);
+    align-items: center;
+    list-style: none;
+    padding: 5px 30px 5px 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.dashboard {
+    color: white;
+    background-color: #c32057;
+    border-radius: 10px;
+}
+
+main {
+    grid-area: main;
+}
+
+main > h2 {
+    font-weight: 700;
+    font-size: 20px;
+    padding-left: 0;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.block-row1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+    height: 140px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15px auto auto 15px;
+    grid-template-areas: ". inf ." ". small-text small-text .";
+}
+
+.inf {
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-left: 15px;
+    text-align: right;
+    font-size: 10pt;
+    grid-area: inf;
+}
+
+.inf > p {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+.row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.block-row2 {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-areas:". inf2 ." "small-text2 .";
+}
+
+.inf2 {
+    align-self: end;
+    text-align: end;
+    font-size: 22px;
+    font-weight: 300;
+    grid-area: inf2;
+    margin-bottom: 10px;
+    margin-right: 10px;
+
+}
+
+.inf2 > p {
+    font-size: 16px;
+    font-weight: 200;
+}
+
+.row3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.block-row3 {
+    display: grid;
+    grid-template-columns: 15px 1fr 15px;
+    grid-template-rows: 70px auto;
+    grid-template-areas:". up ." ". down .";
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+
+}
+
+.employees {
+    padding-left: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: up;
+    border-radius: 8px;
+
+    color: white;
+    height: 100px;
+    position: relative;
+    top: -15px;
+
+}
+
+.employees > p {
+    line-height: 2rem;
+    font-size: 14px;
+}
+
+.tasks {
+    display: flex;
+    padding-left: 20px;
+    height: 70px;
+    color: white;
+    position: relative;
+    top: -15px;
+    border-radius: 8px;
+    align-items: center;
+    grid-area: up;
+}
+
+.button {
+    display: flex;
+    width: 90px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.bugs {
+    background-color: #dead47;
+}
+
+.bugs-container {
+    grid-area: down;
+}
+
+.bugs-row {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 15px auto 34px 34px;
+    gap: 9px;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tab {
+    border-collapse: collapse;
+    grid-area: down;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+footer {
+    height: 80px;
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+footer > p {
+    font-size: 14px;
+    text-align: right;
+    margin-right: 5%;
+}
+
+footer > ul > li {
+    font-weight: 600;
+    margin-right: 30px;
+    display: inline;
+    justify-content: center;
+}
+
+.img-1group {
+    margin-right: 15px;
+
+}
+
+.img-2group {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    padding: 10px;
+    grid-area: img2;
+}
+
+.img2 {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
+
+.img-3group {
+    display: grid;
+    grid-template-columns: 5% auto 5%;
+    grid-template-areas:". blocks .";
+    justify-content: center;
+    align-content: center;
+    width: 360px;
+    margin-left: 100px;
+}
+
+.img3 {
+    width: 320px;
+    height: 160px;
+    filter: invert(100%);
+    grid-area: blocks;
+}
