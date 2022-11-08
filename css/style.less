@@ -1,0 +1,64 @@
+@import url('variables.less');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font: 400 20px/1.1 'Montserrat', sans-serif; 
+    background-color: #d7d7d7;
+    color: #646464;
+}
+
+a{
+    text-decoration: none;
+}
+
+.page{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.header{
+    flex: 1 0 15%;
+    max-width: 15%;
+    min-width: 221px;
+    background-color: #f8f8f8;
+    box-shadow: 3px 0 3px @block-shadow-color;
+
+    &__title{
+        padding: 20px 26px 20px 20px;
+        margin-bottom: 20px;
+        font: 700 30px/1.1 'Roboto Slab', serif;
+        border-bottom: 1px solid grey;
+    }
+
+    &__nav{
+        padding: 0 15px;
+
+        &-items{
+            list-style: none;
+        }
+
+        &-link{
+            display: block;
+            padding: 15px 15px 15px 35px;
+            color: inherit;
+            transition: .15s;
+
+            &:hover{
+                .link-hover(white, #e32c6c);
+            }
+        }
+
+        &-item:first-child &-link{
+            color: white;
+            background-color: #cf0c50;
+        }
+    }
+}
