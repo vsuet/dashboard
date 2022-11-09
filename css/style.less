@@ -14,8 +14,11 @@ body{
     color: #646464;
 }
 
-a{
+a,
+a:visited,
+a:focus{
     text-decoration: none;
+    outline: none;
 }
 
 .page{
@@ -46,13 +49,23 @@ a{
         }
 
         &-link{
+            position: relative;
             display: block;
             padding: 15px 15px 15px 35px;
             color: inherit;
             transition: .15s;
 
-            &:hover{
+            &:hover,
+            &:active{
                 .link-hover(white, #e32c6c);
+            }
+
+            & span{
+                line-height: 18px;
+                position: absolute;
+                top: 50%;
+                left: 5%;
+                transform: translateY(-50%);
             }
         }
 
