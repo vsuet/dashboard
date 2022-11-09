@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Roboto:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.link-hover(@color, @background-color) {
+    color: @color;
+    background-color: @background-color;
+}
+
+body{
+    font: 400 20px/1.1 'Oswald', sans-serif; 
+    background-color: silver;
+}
+
+a, a:visited, a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.page{
+    display: flex;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.header{
+    flex: 1 0 15%;
+    max-width: 15%;
+    min-width: 221px;
+    background-color: #90c29e;
+
+    &-title{
+        padding: 20px 30px 20px 20px;
+        margin-bottom: 20px;
+        font: 700 24px/1.1 'Roboto', sans-serif;
+        border-bottom: 1px solid black;
+    }
+    &-nav{
+        padding: 0px 17px;
+    }
+    &-list{
+        list-style: none;
+    }
+    &-link{
+        display: block;
+        padding: 10px 10px 10px 30px;
+        color: rgb(78, 72, 72);
+        transition: .10s;
+
+        &:hover, &:active{
+            .link-hover(white, blue);
+        }
+    }
+}
