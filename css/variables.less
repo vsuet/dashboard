@@ -1,6 +1,14 @@
-.link-hover(@color, @background-color) {
+@content-bg: #f8f8f8;
+@block-shadow-color: #989898;
+@title-font: 700 30px/1.1 'Roboto Slab', serif;
+
+.elem-hover(@color, @background-color) {
     color: @color;
     background-color: @background-color;
 }
 
-@block-shadow-color: #989898;
+.grid-properties(@grid-template-rows, @grid-template-columns, @gap){
+    grid-template-rows: @grid-template-rows;
+    grid-template-columns: @grid-template-columns;
+    gap: @gap;
+}
