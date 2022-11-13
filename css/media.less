@@ -1,0 +1,68 @@
+@media screen and (max-width: 1000px) {
+    .container {
+        height: 100%;
+    }
+
+    .card {
+        &.small {
+            width: 40%;
+            & .card_body > .card_content > .text_main {
+                font-size: 24px;
+            }
+        }
+
+        &.graph {
+            width: 24%;
+            & .card_body .card_content .text_main {
+                white-space: pre-wrap;
+            }
+        }
+
+        &.selector, &.table {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .left_content {
+        display: none;
+    }
+
+    .container > header {
+        padding-left: 18px;
+        display: inline-flex;
+        align-items: center;
+        & .menu_button {
+            display: block;
+            border: none;
+            font-size: 28px;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        & .header_name {
+            margin: 20px 0;
+        }
+    }
+}
+
+@media screen and (max-width: 649px) {
+    .card {
+        &.small {
+            width: 38%;
+        }
+
+        &.graph {
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .card {
+        &.small {
+            width: 100%;
+        }
+    }
+}
