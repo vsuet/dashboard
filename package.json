@@ -1,22 +1,21 @@
 {
-  "name": "dashboard",
-  "version": "1.0.0",
-  "description": "![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/reckek/dashboard.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/reckek/dashboard/issues"
-  },
-  "homepage": "https://github.com/reckek/dashboard#readme",
-  "dependencies": {
-    "pug-cli": "^1.0.0-alpha6"
-  }
+	"name": "dashboard",
+	"version": "1.0.0",
+	"description": "![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)",
+	"main": "index.js",
+	"scripts": {
+		"dev:pug": "npx pug \"./src/view/index.pug\" --out \"./dist\" -w",
+		"dev:sass": "npx sass './src/styles/main.scss' './dist/main.css' -w",
+		"serve": "cd ./dist/ && npx browser-sync start --server --files \"./**/*.*\"",
+		"updStatic": "rm -rd \"./dest/static\" && cp -r \"./src/static/\" \"./dist/static/\"",
+		"build": "rm -dr ./dist && npx pug \"./src/view/index.pug\" --out \"./dist\" && npx sass './src/styles/main.scss' './dist/main.css' && cp -r \"./src/static/\" \"./dist/static/\""
+	},
+	"license": "ISC",
+	"devDependencies": {
+		"pug-cli": "^1.0.0-alpha6",
+		"sass": "^1.56.1"
+	},
+	"dependencies": {
+		"reseter.css": "^2.0.0"
+	}
 }
