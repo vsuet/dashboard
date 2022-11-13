@@ -1,0 +1,246 @@
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: rgb(80, 80, 80);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.2fr 3fr 0.2fr;
+  min-height: 100vh;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    " footer footer footer";
+}
+
+.header {
+  grid-area: header;
+  background-color: #333333;
+  padding: 20px;
+
+
+
+
+}
+
+.aside {
+  font-size: 30px;
+
+  grid-area: aside;
+  background-color: #414141;
+
+  padding: 20px;
+}
+
+.companyrofl {
+  margin-left: 15px;
+  ;
+  font-size: 30px;
+}
+
+.asside_list {
+  list-style-type: none;
+  color: white;
+  font-size: 20px;
+}
+
+a {
+  font-size: 18px;
+  color: white;
+  line-height: 2px;
+  border: none;
+}
+
+li:hover {
+
+  box-shadow:
+    inset 0 0 60px whitesmoke,
+    inset 20px 0 80px #f0f,
+    inset -20px 0 80px #0ff,
+    inset 20px 0 300px #f0f,
+    inset -20px 0 300px #0ff,
+    0 0 50px #fff,
+    -10px 0 80px #f0f,
+    10px 0 80px #0ff;
+  border-radius: 10px;
+}
+
+.footer {
+  display: flex;
+  grid-area: footer;
+  background-color: #333333;
+
+  color: #fff;
+
+
+  padding: 20px;
+
+
+}
+
+.main {
+  min-width: 100%;
+  grid-area: main;
+
+}
+
+
+/*блок 1 */
+
+
+
+.block_1__elem1,
+.block_1__elem2,
+.block_1__elem3,
+.block_1__elem4 {
+  position: relative;
+
+  margin: 10px;
+  padding: 10px;
+
+
+  width: 15%;
+
+}
+
+
+
+
+/*блок 1 */
+
+
+
+/*блок 2 */
+
+.block_2__elem1,
+.block_2__elem2,
+.block_2__elem3 {
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  width: 30%;
+  height: 75%;
+
+
+
+}
+
+.block__1 {
+
+
+  color: white;
+  display: flex;
+
+
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 30vh;
+  flex-wrap: wrap;
+
+
+}
+
+.block__2 {
+  display: flex;
+
+
+  flex-direction: row;
+  justify-content: space-around;
+
+  flex-wrap: nowrap;
+
+
+  color: white;
+
+
+
+}
+
+/*блок 2 */
+
+.block__3 {
+  display: flex;
+
+
+  flex-direction: row;
+  justify-content: space-around;
+
+  flex-wrap: nowrap;
+
+
+  color: white;
+
+
+  min-height: 50vh;
+  color: white;
+
+}
+
+
+
+.block_3__elem1,
+.block_3__elem2 {
+  width: 45%;
+
+
+  margin: 10px;
+  padding: 30px;
+  background-color: #333333;
+  color: white;
+
+
+
+}
+
+
+
+
+
+.header_name {
+  font-size: 50px;
+  margin: 0px 0px 0px 150px;
+  color: white;
+}
+
+
+.info1 {
+
+  float: left;
+  width: 75%;
+
+
+}
+
+.info2 {
+  display: inline-grid;
+  float: left;
+  width: 15%;
+
+}
+
+hr {
+  color: white;
+}
+
+.img_holder {
+  z-index: 10;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 100px;
+  left: 150px;
+
+
+}
+
+.companyrofl {
+  color: white;
+}
+
+
+
+
+
