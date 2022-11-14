@@ -1,0 +1,680 @@
+.animwidth {
+  transition: width 0.2s;
+}
+.animfsize {
+  transition: font-size 0.2s;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+}
+.pad-link {
+  padding: 10px;
+}
+.title {
+  color: #000;
+  font-size: 25px;
+}
+.alignment {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.line {
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+}
+.shadows-right {
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.277);
+}
+.header-third {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #d49f1d;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:active,
+a:focus {
+  outline: none;
+  border: none;
+}
+body {
+  color: #000;
+  background-color: #eaeaea;
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+.header {
+  position: absolute;
+  background-color: #fff;
+  min-height: calc(100% + 20px);
+  width: 20vw;
+  padding: 30px 20px 0 15px;
+  font-size: 18px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.277);
+  transition: 0.2s;
+}
+.header .header-title {
+  color: #000;
+  font-size: 25px;
+  transition: font-size 0.2s;
+}
+.header hr {
+  margin: 20px 0;
+  margin-left: 3px;
+  width: 20vw;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+}
+.header ul {
+  list-style: none;
+}
+.header ul .nav-item {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 10px;
+}
+.header ul .nav-item:last-child {
+  margin-bottom: 0;
+}
+.header ul .nav-item:hover {
+  background-color: #c32057;
+}
+.header ul .nav-item:hover a {
+  color: #fff;
+}
+.header ul .nav-item div {
+  display: flex;
+  align-items: center;
+}
+.header ul .nav-item div img {
+  width: 30px;
+}
+.header ul .nav-item div a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+}
+.main {
+  margin-left: 20vw;
+  max-width: 80vw;
+  padding: 30px 20px 0 20px;
+  margin-bottom: 20px;
+}
+.main .burger-wrapper .burger-inner {
+  display: none;
+  position: relative;
+  z-index: 10;
+  padding: 10px;
+  max-width: 50px;
+}
+.main .burger-wrapper .burger-inner .bar {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  transition: 0.2s;
+}
+.main .burger-wrapper .burger-inner .top {
+  position: absolute;
+  bottom: 6px;
+  left: 10px;
+}
+.main .burger-wrapper .burger-inner .bottom {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+}
+.main hr {
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+  margin-top: 30px;
+}
+.main .main-title {
+  color: #000;
+  font-size: 25px;
+  transition: font-size 0.2s;
+}
+.main .rate {
+  margin-top: 50px;
+}
+.main .rate .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .rate .cards .card {
+  position: relative;
+  z-index: 0;
+  width: 25%;
+  text-align: right;
+  padding: 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.277);
+}
+.main .rate .cards .card > img {
+  width: 80px;
+  padding: 10px;
+  position: absolute;
+  z-index: 0;
+  top: -20px;
+  left: 20px;
+  transition: width 0.2s;
+}
+@media (max-width: 1280px) {
+  .main .rate .cards .card > img {
+    width: 60px;
+  }
+}
+.main .rate .cards .card .green {
+  background-color: #438a06;
+}
+.main .rate .cards .card .orange {
+  background-color: #d49f1d;
+}
+.main .rate .cards .card .blue {
+  background-color: #264d98;
+}
+.main .rate .cards .card .pink {
+  background-color: #c32057;
+}
+.main .rate .cards .card .main-text {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+}
+.main .rate .cards .card .main-text .rate-title {
+  font-size: 12px;
+  transition: font-size 0.2s;
+}
+@media (max-width: 1100px) {
+  .main .rate .cards .card .main-text .rate-title {
+    font-size: 10px;
+  }
+}
+.main .rate .cards .card .main-text .rate-subtitle {
+  font-size: 22px;
+  transition: font-size 0.2s;
+}
+@media (max-width: 1100px) {
+  .main .rate .cards .card .main-text .rate-subtitle {
+    font-size: 16px;
+  }
+}
+.main .rate .cards .card hr {
+  margin: 15px 0;
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+}
+.main .rate .cards .card .subtext {
+  margin-left: 8px;
+  position: relative;
+}
+.main .rate .cards .card .subtext img {
+  background-color: transparent;
+  width: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  left: 0;
+}
+.main .rate .cards .card .subtext .rate-event {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 20px;
+}
+.main .rate .cards .diagram-card {
+  width: 33%;
+  padding-top: 150px;
+}
+.main .rate .cards .diagram-card > img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 20%;
+  width: 260px;
+  height: 150px;
+  max-width: auto;
+}
+@media (max-width: 1160px) {
+  .main .rate .cards .diagram-card > img {
+    width: 200px;
+  }
+}
+.main .rate .cards .diagram-card .main-text {
+  text-align: left;
+}
+.main .rate .cards .diagram-card .main-text .diagram-title {
+  font-size: 20px;
+}
+.main .rate .cards .diagram-card .main-text .diagram-subtitle {
+  font-size: 14px;
+}
+.main .stats {
+  margin-top: 60px;
+}
+.main .stats .stats-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.main .stats .stats-items .stats-item {
+  width: 50%;
+  margin: 0 10px;
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  min-height: 350px;
+  max-height: auto;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.277);
+}
+.main .stats .stats-items .survey .survey-header {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #d49f1d;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+.main .stats .stats-items .survey .survey-header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.main .stats .stats-items .survey .survey-header ul a {
+  text-decoration: none;
+  color: inherit;
+}
+@media (max-width: 1160px) {
+  .main .stats .stats-items .survey .survey-header ul a {
+    font-size: 10px;
+  }
+}
+.main .stats .stats-items .survey .survey-header ul li {
+  margin-left: 30px;
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.main .stats .stats-items .survey .survey-header ul li:hover {
+  background-color: rgba(255, 255, 255, 0.197);
+}
+.main .stats .stats-items .survey .survey-header ul li div {
+  display: flex;
+  align-items: center;
+}
+.main .stats .stats-items .survey .survey-header img {
+  transition: width 0.2s;
+  width: 20px;
+  margin-right: 10px;
+}
+@media (max-width: 1100px) {
+  .main .stats .stats-items .survey .survey-header img {
+    width: 10px;
+  }
+}
+.main .stats .stats-items .survey .survey-main {
+  margin-top: -20px;
+}
+.main .stats .stats-items .survey .survey-main hr {
+  height: 1px;
+  border: none;
+  border-top: 1px solid #000;
+  margin: 10px 0;
+}
+.main .stats .stats-items .survey .survey-main form {
+  margin-top: 15px;
+  font-size: 16px;
+}
+.main .stats .stats-items .survey .survey-main form div {
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.main .stats .stats-items .survey .survey-main form div input[type="checkbox"] {
+  padding: 5px;
+}
+.main .stats .stats-items .survey .survey-main form div label {
+  margin-left: 10px;
+}
+.main .stats .stats-items .survey .survey-main form div img {
+  width: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.main .stats .stats-items .survey .survey-main form div .edit {
+  background-color: #39ab92;
+}
+.main .stats .stats-items .survey .survey-main form div .cancel {
+  background-color: red;
+}
+.main .stats .stats-items .table .table-header {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 0;
+  font-size: 14px;
+  margin: 0 auto;
+  background-color: #d49f1d;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #264d98;
+}
+.main .stats .stats-items .table .table-header p {
+  margin-bottom: 10px;
+}
+.main .stats .stats-items .table .table-header p:last-child {
+  margin-bottom: 0;
+}
+.main .stats .stats-items .table .table-main table {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  border-collapse: collapse;
+  border: none;
+  transition: font-size 0.2s;
+}
+@media (max-width: 1280px) {
+  .main .stats .stats-items .table .table-main table {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1100px) {
+  .main .stats .stats-items .table .table-main table {
+    font-size: 10px;
+  }
+}
+.main .stats .stats-items .table .table-main table thead {
+  color: #0ababa;
+}
+.main .stats .stats-items .table .table-main table thead th {
+  font-weight: 600;
+}
+.main .stats .stats-items .table .table-main table td,
+.main .stats .stats-items .table .table-main table th {
+  padding: 10px 40px 10px 10px;
+  border-bottom: 1px solid #000;
+}
+.main .stats .stats-items .table .table-main table .no-border {
+  border: none;
+}
+.footer {
+  margin-left: 20vw;
+  padding-right: 20px;
+}
+.footer nav {
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.footer nav .num {
+  font-size: 20px;
+}
+.footer nav ul {
+  list-style: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+.footer nav ul li {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.burger-inner.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.burger-inner.active .bar:nth-child(1) {
+  transform: translateY(-3px) rotate(45deg);
+}
+.burger-inner.active .bar:nth-child(3) {
+  transform: translateY(5px) rotate(-45deg);
+}
+.main .burger-wrapper .burger-inner.active {
+  top: 18px;
+}
+body.noscroll {
+  overflow: hidden;
+}
+.header.visible {
+  z-index: 2;
+  top: 0;
+  width: 100vw;
+  height: calc(100vh + 20px);
+  overflow: auto;
+}
+.header.visible #header-hr {
+  top: 0;
+  margin-left: 0;
+  width: 100vw;
+}
+.header.visible .header-title {
+  position: relative;
+  left: 35px;
+}
+.header.visible nav ul div img {
+  width: 25px;
+}
+.header.visible nav ul div .nav-link {
+  font-size: 20px;
+}
+@media (max-width: 1000px) {
+  .header .header-title {
+    font-size: 16px;
+  }
+  .header nav ul .nav-item {
+    padding-left: 0;
+  }
+  .header nav ul .nav-item img {
+    width: 15px;
+  }
+  .header nav ul .nav-item .nav-link {
+    font-size: 12px;
+  }
+  .main .main-title {
+    font-size: 16px;
+  }
+  .main .rate .rate-cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .main .rate .rate-cards .card {
+    width: 48%;
+    margin: 0 5px 40px 5px;
+  }
+  .main .rate .rate-cards .card .main-text .rate-title {
+    font-size: 12px;
+  }
+  .main .rate .rate-cards .card .main-text .rate-subtitle {
+    font-size: 22px;
+  }
+  .main .diagram {
+    margin-top: 0;
+  }
+  .main .diagram .cards .diagram-card {
+    padding-top: 120px;
+    transition: width 0.2s;
+    min-height: 280px;
+    min-width: 180px;
+  }
+  .main .diagram .cards .diagram-card > img {
+    width: 150px;
+    height: 100px;
+    top: 10%;
+  }
+  .main .diagram .cards .diagram-card .main-text .diagram-title {
+    font-size: 16px;
+  }
+  .main .diagram .cards .diagram-card .main-text .diagram-subtitle {
+    font-size: 12px;
+  }
+  .main .stats .stats-items {
+    flex-wrap: wrap;
+  }
+  .main .stats .stats-items .stats-item {
+    min-height: 400px;
+    width: 100%;
+    min-height: auto;
+  }
+  .main .stats .stats-items .survey {
+    margin-bottom: 60px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div img {
+    width: 25px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div a {
+    font-size: 16px;
+  }
+  .main .stats .stats-items .table .table-main table {
+    font-size: 14px;
+  }
+  .footer nav {
+    font-size: 14px;
+  }
+  .footer nav .num {
+    font-size: 18px;
+  }
+}
+@media (max-width: 799px) {
+  .header {
+    top: -100%;
+    min-height: calc(100vh - 20px);
+  }
+  .main {
+    max-width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+    padding-top: 20px;
+  }
+  .main .burger-wrapper {
+    position: relative;
+  }
+  .main .burger-wrapper .burger-inner {
+    display: block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    left: 15px;
+  }
+  .main .burger-wrapper .main-title {
+    margin-left: 40px;
+  }
+  .main .diagram {
+    margin-top: 20px;
+  }
+  .main .diagram .cards .diagram-card {
+    min-height: 220px;
+    padding-top: 100px;
+  }
+  .footer {
+    margin-left: 0;
+  }
+}
+@media (max-width: 649px) {
+  .main .rate .rate-cards .card {
+    width: 47%;
+  }
+  .main .diagram .cards {
+    flex-wrap: wrap;
+  }
+  .main .diagram .cards .diagram-card {
+    min-height: 245px;
+    width: 100%;
+    padding-top: 140px;
+    margin-top: 80px;
+  }
+  .main .diagram .cards .diagram-card > img {
+    width: 400px;
+    height: 170px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div a {
+    font-size: 12px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div img {
+    width: 20px;
+  }
+}
+@media (max-width: 499px) {
+  .main .rate .rate-cards .card {
+    width: 100%;
+  }
+  .main .diagram .cards .diagram-card {
+    min-width: auto;
+  }
+  .main .diagram .cards .diagram-card img {
+    width: 220px;
+  }
+  .main .stats .stats-items .survey {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li {
+    margin-left: 10px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div a {
+    font-size: 12px;
+  }
+  .main .stats .stats-items .survey .survey-header nav ul li div img {
+    width: 10px;
+  }
+  .main .stats .stats-items .table {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .main .stats .stats-items .table .table-main table {
+    font-size: 10px;
+  }
+  .footer nav {
+    font-size: 10px;
+  }
+  .footer nav .num {
+    font-size: 12px;
+  }
+}
