@@ -285,16 +285,16 @@ header h2 {
             & .card_content > .card_table {
                 border-collapse: collapse; // Включаем отображение границ таблицы
                 margin-top: 10px;
-                & tbody > tr:not(:last-child) {
+                & tbody > tr:not(:last-child), thead > tr {
                     border-bottom: 2px solid @borderColor;
                 }
 
-                & tbody > tr > th, td {
+                & tbody > tr > td, thead > tr > th {
                     padding: 5px;
                     text-align: start;
                 }
 
-                & tbody > tr > th {
+                & thead > tr > th {
                     color: @turquoise;
                 }
 
