@@ -1,0 +1,7 @@
+//- icon = [fillNone, d]
+mixin aside-list-item(href, text, icon)
+  li.aside__list-item
+      svg.aside__icon
+        each path in icon
+          path(fill=path.fillNone d=path.d)
+      a(href= href)= text

@@ -7,7 +7,7 @@
 		"dev:pug": "npx pug \"./src/view/index.pug\" --out \"./dist\" -w",
 		"dev:sass": "npx sass './src/styles/main.scss' './dist/main.css' -w",
 		"serve": "cd ./dist/ && npx browser-sync start --server --files \"./**/*.*\"",
-		"updStatic": "rm -rd \"./dest/static\" && cp -r \"./src/static/\" \"./dist/static/\"",
+		"updStatic": "cp -r \"./src/static/\" \"./dist/static/\"",
 		"build": "rm -dr ./dist && npx pug \"./src/view/index.pug\" --out \"./dist\" && npx sass './src/styles/main.scss' './dist/main.css' && cp -r \"./src/static/\" \"./dist/static/\""
 	},
 	"license": "ISC",

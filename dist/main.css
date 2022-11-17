@@ -1,0 +1,393 @@
+*, ::after, ::before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+main {
+  display: block;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button, input, optgroup, select, textarea {
+  line-height: inherit;
+  border: 1px solid currentColor;
+}
+
+button {
+  overflow: visible;
+  text-transform: none;
+}
+
+[type=button], [type=reset], [type=submit], button {
+  -webkit-appearance: button;
+  padding: 1px 6px;
+}
+
+input {
+  overflow: visible;
+}
+
+input, textarea {
+  padding: 1px;
+}
+
+fieldset {
+  border: 1px solid currentColor;
+  margin: 0 2px;
+}
+
+legend {
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  white-space: normal;
+}
+
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+select {
+  text-transform: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+[type=search] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type=color] {
+  background: inherit;
+}
+
+::-webkit-inner-spin-button, ::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.5;
+}
+
+::-webkit-file-upload-button, ::-webkit-search-decoration {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+:-moz-ui-invalid {
+  box-shadow: none;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  color: inherit;
+  overflow: visible;
+}
+
+dl, ol, ul {
+  margin: 1em 0;
+}
+
+dl dl, dl ol, dl ul, ol dl, ol ol, ol ul, ul dl, ul ol, ul ul {
+  margin: 0;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+audio, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+table {
+  text-indent: 0;
+  border-color: inherit;
+}
+
+details {
+  display: block;
+}
+
+dialog {
+  background-color: inherit;
+  border: solid;
+  color: inherit;
+  display: block;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+dialog:not([open]) {
+  display: none;
+}
+
+summary {
+  display: list-item;
+}
+
+canvas {
+  display: inline-block;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.wrapper .content {
+  z-index: 1;
+  transition: transform 400ms;
+  background-color: #fff;
+}
+.wrapper.aside-open .content {
+  transform: translateX(70vw);
+}
+.wrapper.aside-open .aside {
+  max-width: 70vw;
+  pointer-events: initial;
+}
+.wrapper .aside {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  pointer-events: none;
+}
+.wrapper .content {
+  flex: 1 1 auto;
+}
+@media (min-width: 800px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 17.5rem 1fr;
+    grid-template-rows: min-content 1fr max-content;
+    grid-template-areas: "aside header" "aside content" "aside footer";
+    min-height: 100vh;
+  }
+  .wrapper.aside-open .content {
+    z-index: initial;
+    transform: initial;
+    transition: transform 0ms;
+  }
+  .wrapper.aside-open .aside {
+    max-width: initial;
+    pointer-events: initial;
+  }
+  .wrapper .header {
+    grid-area: header;
+  }
+  .wrapper .aside {
+    position: initial;
+    top: initial;
+    bottom: initial;
+    left: initial;
+    right: initial;
+    grid-area: aside;
+    max-width: inherit;
+    z-index: initial;
+  }
+  .wrapper .content {
+    grid-area: content;
+    flex: 1 1 auto;
+    padding: 0 3.75rem;
+  }
+  .wrapper .footer {
+    grid-row: footer;
+    grid-row: span;
+  }
+}
+
+.content {
+  display: block;
+  width: 100%;
+  padding: 0 1.875rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: min(40vw, 1.25rem);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.header__button {
+  position: relative;
+  width: 1.875rem;
+  height: 1.875rem;
+  border: unset;
+  background-color: unset;
+  cursor: pointer;
+}
+.header__button::before, .header__button::after,
+.header__button span {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10%;
+  display: block;
+  width: 80%;
+  height: 0.1875rem;
+  background-color: black;
+  transition: transform 400ms, opacity 400ms;
+}
+.header__button::before {
+  transform: translateY(0.5rem);
+}
+.header__button span {
+  transform: translateY(0.9375rem);
+}
+.header__button::after {
+  transform: translateY(1.375rem);
+}
+.header__button--open::before {
+  transform: translateY(0.9375rem) rotate(46deg);
+}
+.header__button--open span {
+  opacity: 0;
+}
+.header__button--open::after {
+  transform: translateY(0.9375rem) rotate(-46deg);
+}
+@media (min-width: 800px) {
+  .header__button {
+    display: none;
+  }
+}
+.header__title {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  font-size: min(9vw, 2.5rem);
+  color: #000;
+}
+
+.aside {
+  border-right: 0.125rem solid rgb(104, 102, 102);
+  padding: 0 0.625rem 0.625rem;
+  background-color: rgb(228, 226, 226);
+}
+.aside__title {
+  display: block;
+  margin: 1.875rem 0;
+  font-size: 1.625rem;
+  color: black;
+}
+.aside__list-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.3125rem;
+  list-style: none;
+}
+.aside__list-item:not(:last-child) {
+  margin-bottom: 1.25rem;
+}
+.aside__link {
+  text-decoration: none;
+  color: #292828;
+}
+.aside__link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  padding: 0;
+}
+.aside__icon {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+/*# sourceMappingURL=main.css.map */

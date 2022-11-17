@@ -1,0 +1,68 @@
+.header {
+	display: flex;
+	align-items: center;
+	gap: min(40vw, re-c(20));
+	padding-top: re-c(20);
+	padding-bottom: re-c(20);
+
+	&__button {
+		position: relative;
+		width: re-c(30);
+		height: re-c(30);
+		border: unset;
+		background-color: unset;
+		cursor: pointer;
+
+		&::before,
+		&::after,
+		span {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 10%;
+			display: block;
+			width: 80%;
+			height: re-c(3);
+			background-color: black;
+			transition: transform 400ms, opacity 400ms;
+		}
+
+		&::before {
+			transform: translateY(re-c(8));
+		}
+
+		span {
+			transform: translateY(re-c(15));
+		}
+
+		&::after {
+			transform: translateY(re-c(22))
+		}
+
+		&--open {
+			&::before {
+				transform: translateY(re-c(15)) rotate(46deg);
+			}
+
+			span {
+				opacity: 0;
+			}
+
+			&::after {
+				transform: translateY(re-c(15)) rotate(-46deg);
+			}
+		}
+
+		@media (min-width: 800px) {
+			display: none;
+		}
+	}
+
+	&__title {
+		display: inline-block;
+		width: 100%;
+		margin: 0;
+		font-size: min(9vw, 2.5rem);
+		color: #000;
+	}
+}
