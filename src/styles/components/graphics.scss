@@ -57,8 +57,9 @@
 		color: #727272;
 		transition: color 400ms;
 
-		&:hover {
-			color: #000;
-		}
+	}
+
+	a.graphic-panel__action:hover {
+		color: #000;
 	}
 }

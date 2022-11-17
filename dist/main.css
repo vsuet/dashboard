@@ -373,7 +373,7 @@ body {
   color: #727272;
   transition: color 400ms;
 }
-.panel__action:hover {
+.panel a.panel__action:hover {
   color: #000;
 }
 
@@ -429,7 +429,7 @@ body {
   color: #727272;
   transition: color 400ms;
 }
-.graphic-panel__action:hover {
+.graphic-panel a.graphic-panel__action:hover {
   color: #000;
 }
 
