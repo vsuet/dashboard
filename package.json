@@ -5,7 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"dev:pug": "npx pug \"./src/view/index.pug\" --out \"./dist\" -w",
-		"dev:sass": "npx sass './src/styles/main.scss' './dist/main.css' -w",
+		"dev:sass": "npx sass \"./src/styles/main.scss\" \"./dist/main.css\" -w",
 		"serve": "cd ./dist/ && npx browser-sync start --server --files \"./**/*.*\"",
 		"updStatic": "cp -r \"./src/static/\" \"./dist/static/\"",
 		"build": "rm -dr ./dist && npx pug \"./src/view/index.pug\" --out \"./dist\" && npx sass './src/styles/main.scss' './dist/main.css' && cp -r \"./src/static/\" \"./dist/static/\""

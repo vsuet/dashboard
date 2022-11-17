@@ -1,93 +1,23 @@
-.wrapper {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-	overflow: hidden;
+body {
+	background-color: #f8f6f6;
+}
 
+.wrapper {
 	.content {
-    z-index: 1;
-    transition: transform 400ms;
-		background-color: #fff;
+		padding: 0 clamp(re-c(10), 3vw, re-c(30));
 	}
 
 	&.aside-open {
-		.content {
-			transform: translateX(70vw);
+		.wrapper__content {
 		}
 
 		.aside {
-			max-width: 70vw;
-			pointer-events: initial;
 		}
 	}
 
 	& .aside {
-		position: fixed;
-		top: 0;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		z-index: 0;
-		pointer-events: none;
-	}
-
-	.content {
-		flex: 1 1 auto;
-	}
-
-	@media (min-width: 800px) {
-		display: grid;
-		grid-template-columns: re-c(280) 1fr;
-		grid-template-rows: min-content 1fr max-content;
-		grid-template-areas:
-			"aside header"
-			"aside content"
-			"aside footer";
-		min-height: 100vh;
-
-		&.aside-open {
-			.content {
-        z-index: initial;
-				transform: initial;
-        transition: transform 0ms;
-			}
-
-			.aside {
-				max-width: initial;
-				pointer-events: initial;
-			}
-		}
-
-		& .header {
-			grid-area: header;
-		}
-
-		& .aside {
-			position: initial;
-			top: initial;
-			bottom: initial;
-			left: initial;
-			right: initial;
-			grid-area: aside;
-			max-width: inherit;
-			z-index: initial;
-		}
-
-		& .content {
-			grid-area: content;
-			flex: 1 1 auto;
-			padding: 0 re-c(60);
-		}
-
-		.footer {
-			grid-row: footer;
-			grid-row: span;
-		}
 	}
 }
 
 .content {
-	display: block;
-	width: 100%;
-	padding: 0 re-c(30);
 }

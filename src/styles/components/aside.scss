@@ -1,7 +1,7 @@
 .aside {
   border-right: re-c(2) solid rgb(104, 102, 102);
-  padding: 0 re-c(10) re-c(10);
-  background-color: rgb(228, 226, 226);
+	min-width: 100%;
+	padding: 0 re-c(10) re-c(10);
 
   &__title {
     display: block;
