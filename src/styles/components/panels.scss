@@ -12,7 +12,6 @@
 	&__list-item {
 		margin-bottom: re-c(55);
 	}
-
 }
 
 .panel {
@@ -23,10 +22,23 @@
 	&__top {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
 		flex-wrap: wrap;
 		margin-bottom: re-c(10);
 		padding: 0 0 8px 0;
 		border-bottom: 1px solid #000;
+
+		@media (min-width: 302px) {
+			flex-direction: inherit;
+		}
+
+		@media (min-width: 500px) {
+			flex-direction: column;
+		}
+
+		@media (min-width: 586px) {
+			flex-direction: inherit;
+		}
 	}
 
 	&__icon {

@@ -416,10 +416,26 @@ button {
 .panel__top {
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 0.625rem;
   padding: 0 0 8px 0;
   border-bottom: 1px solid #000;
+}
+@media (min-width: 302px) {
+  .panel__top {
+    flex-direction: inherit;
+  }
+}
+@media (min-width: 500px) {
+  .panel__top {
+    flex-direction: column;
+  }
+}
+@media (min-width: 586px) {
+  .panel__top {
+    flex-direction: inherit;
+  }
 }
 .panel__icon {
   top: -1.25rem;
