@@ -1,0 +1,17 @@
+.task {
+	list-style: none;
+
+	&__wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: re-c(20);
+	}
+
+	&__button {
+	}
+
+	p {
+		width: 100%;
+	}
+}

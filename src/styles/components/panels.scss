@@ -44,23 +44,26 @@
 		flex-direction: column;
 		justify-content: space-around;
 		align-items: end;
-		font-size: clamp(re-c(14), 4vw, re-c(16));
-		font-weight: 400;
-		color: #727272;
+
+		& span {
+			font-weight: 400;
+			font-size: clamp(re-c(14), 3vw, re-c(16));
+			color: #727272;
+		}
 	}
 
 	&__text {
+		text-align: right;
 		font-weight: 700;
-		font-size: clamp(re-c(26), 5vw, re-c(38));
+		font-size: clamp(re-c(18), 3vw, re-c(38));
 		color: #727272;
 	}
 
 	&__action {
 		font-weight: 700;
-		font-size: clamp(re-c(14), 5vw, re-c(16));
+		font-size: clamp(re-c(14), 3vw, re-c(16));
 		color: #727272;
 		transition: color 400ms;
-
 	}
 
 	a.panel__action:hover {

@@ -1,0 +1,17 @@
+.table {
+	width: 100%;
+
+	&__group {
+		display: grid;
+		grid-template-columns: 0.2fr 1fr 0.5fr 0.5fr;
+		gap: re-c(5);
+		padding: re-c(10);
+		border-bottom: 1px solid rgb(112, 112, 112);
+	}
+
+	&__name {
+		font-size: clamp(re-c(16), 4vw, re-c(21));
+		text-align: left;
+		color: rgb(70, 182, 202);
+	}
+}

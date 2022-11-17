@@ -1,23 +1,58 @@
-body {
-	background-color: #f8f6f6;
-}
-
 .wrapper {
-	.content {
-		padding: 0 clamp(re-c(10), 3vw, re-c(30));
-	}
-
-	&.aside-open {
-		.wrapper__content {
-		}
-
-		.aside {
-		}
+	@media (min-width: 800px) {
+		display: flex;
 	}
 
 	& .aside {
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		width: clamp(re-c(160), 32vw, re-c(320));
+		transform: translate3d(-100vw, 0, 0);
+		transition: transform 460ms;
+
+		@media (min-width: 800px) {
+			position: sticky;
+			transform: translate3d(0, 0, 0);
+			transition: transform 0ms;
+		}
+	}
+
+	.wrapper__content {
+		z-index: 0;
+		padding: 0 clamp(re-c(10), 32vw, re-c(30));
+		background-color: #f0f0f0;
+		transition: transform 500ms;
+
+		@media (min-width: 800px) {
+			transition: transform 0ms;
+			width: 100%;
+		}
+	}
+
+	&.aside-open {
+		display: flex;
+
+		.aside {
+			transform: translate3d(0, 0, 0);
+		}
+
+		.wrapper__content {
+			transform: translate3d(clamp(re-c(160), 32vw, re-c(320)), 0, 0);
+
+			@media (min-width: 800px) {
+				transform: inherit;
+			}
+		}
 	}
 }
 
 .content {
+}
+
+button {
+	border: none;
+	background-color: inherit;
+	padding: 0;
 }

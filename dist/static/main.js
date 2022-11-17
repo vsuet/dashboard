@@ -1,5 +1,5 @@
 (() => {
-	document.querySelector("[data-toggle-view-burger]").addEventListener("click", onClickBurger);
+	const burgerButton = document.querySelector("[data-toggle-view-burger]").addEventListener("click", onClickBurger);
 	const wrapper = document.querySelector(".wrapper");
 
 	function onClickBurger(event) {

@@ -8,11 +8,13 @@ html(lang="en")
 		link(rel="stylesheet" href="./main.css")
 	body
 		.wrapper
-			//- include ./components/aside
+			include ./components/aside
 			.wrapper__content
 				include ./components/header
 				main.content
 					include ./components/panels
 					include ./components/graphics
+					include ./components/tasks
+					include ./components/stats
 				include ./components/footer
 		script(src="static/main.js")

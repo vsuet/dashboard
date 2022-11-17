@@ -1,0 +1,26 @@
+.stats {
+	padding: re-c(20);
+	background-color: #f8f6f6;
+	box-shadow: 3px 4px 3px 3px #a9a9a9;
+	margin-bottom: re-c(40);
+
+	&__top {
+		margin-top: re-c(-40);
+		margin-bottom: re-c(20);
+		padding: re-c(20);
+		background-color: #4977bd;
+	}
+
+	&__title {
+		margin: auto 0;
+		margin-bottom: re-c(20);
+		font-size: clamp(re-c(16), 4vw, re-c(22));
+		color: #fff;
+	}
+
+	&__subtitle {
+		margin: auto 0;
+		color: #fff;
+		font-size: clamp(re-c(16), 4vw, re-c(22));
+	}
+}
