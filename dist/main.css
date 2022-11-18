@@ -415,39 +415,39 @@ button {
 }
 .panel__top {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
   flex-wrap: wrap;
   margin-bottom: 0.625rem;
   padding: 0 0 8px 0;
   border-bottom: 1px solid #000;
 }
-@media (min-width: 302px) {
+@media (min-width: 588px) {
   .panel__top {
-    flex-direction: inherit;
-  }
-}
-@media (min-width: 500px) {
-  .panel__top {
-    flex-direction: column;
-  }
-}
-@media (min-width: 586px) {
-  .panel__top {
-    flex-direction: inherit;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }
 .panel__icon {
   top: -1.25rem;
   width: 7.5rem;
   height: 7.5rem;
-  margin: -2.5rem 0 0;
+  margin: -2.5rem auto 0;
+}
+@media (min-width: 588px) {
+  .panel__icon {
+    margin: -2.5rem 0 0;
+  }
 }
 .panel__title {
   display: inline-flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: end;
+  align-items: center;
+}
+@media (min-width: 588px) {
+  .panel__title {
+    align-items: end;
+  }
 }
 .panel__title span {
   font-weight: 400;
@@ -511,6 +511,9 @@ button {
   font-size: clamp(0.875rem, 4vw, 1rem);
   font-weight: 400;
   color: #727272;
+}
+.graphic-panel__title span {
+  text-align: right;
 }
 .graphic-panel__text {
   text-align: right;

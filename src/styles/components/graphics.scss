@@ -44,6 +44,10 @@
 		font-size: clamp(re-c(14), 4vw, re-c(16));
 		font-weight: 400;
 		color: #727272;
+
+		span {
+			text-align: right;
+		}
 	}
 
 	&__text {
