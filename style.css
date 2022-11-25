@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:#f5f5f5;
+}
+
+
+h1{
+	padding-left: 350px;
+	padding-top: 45 px;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.699);
+}
+
+general-txt{
+	font-weight: 700;
+	color: rgba(0, 0, 0, 0.699);
+}
+
+
+.Menu{
+	position: absolute;
+    top: 0;
+	width: 180px;
+	height: 100%;
+	background-color: #f6f6f6;
+	border-right: solid rgb(179, 175, 175) ;
+}
+
+.Top{
+	display: block;
+	width: 250px;
+	height: 100px;
+}
+
+.Top h1{
+	padding-left: 20px;
+	padding-top: 30px;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.699);
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.main {
+    justify-content: space-between;
+    margin: 0px 0px 0px 200px;
+}
+
+.mainCenter {
+    justify-content: center;
+    margin: 0px 30px 0px 200px;
+}
+
+.mainFooterInput {
+    justify-content: space-around;
+    margin: 0px 30px 0px 200px;
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks .block {
+    width: 15%;
+    min-width: 250px;
+    min-height: 130px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px 1px rgb(0 0 0 / 10%), 0 2px 4px 1px rgb(0 0 0 / 12%);
+	margin-right: 1%;
+	margin-top: 35px;
+}
+
+.blocks .block .blockHeader{
+    height: 70%;
+    display: flex;
+    flex-direction: row;
+}
+
+.blocks .block .blockHeader .boxImage{
+    width: 50%;
+    position: relative;
+}
+
+.blocks .block .blockHeader .boxImage .coloredBoxImage{
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    position: absolute;
+    left: 25px;
+    top: -20px;
+}
+
+.blocks .block .blockHeader .boxInformation{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    margin-right: 30px;
+}
+
+.blocks .block .blockFooter{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.blocks .block .blockFooter img {
+    height: 23px;
+    margin-left: 25px;
+    margin: 5px 5px 5px 5px;
+}
+
+.bottom-text{
+	box-sizing: border-box;
+	padding-top: 2px;
+}
+
+.t-text {
+font-size: 15px;
+}
+
+.text {
+	font-size: 25px;
+}
+
+.boxTop {
+    width: 50%;
+    position: relative;
+}
+
+.coloredBoxTop {
+    width: 200px;
+    height: 65px;
+    background-color: rgb(255, 222, 34);
+    position: absolute;
+    left: 25px;
+    top: -20px;
+}
+
+.s {
+    margin-left: 1180px;
+}
+
+footer{
+	margin-left: 300px;
+}
+
+li {
+    list-style-type: none;
+}
+	
+a {
+    text-decoration: none;
+}
+
+li:hover {
+    display: block;
+    padding: 12px 24px;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: #C32057;
+}
