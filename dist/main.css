@@ -404,8 +404,18 @@ button {
     gap: 1.25rem;
   }
 }
+@media (min-width: 1000px) {
+  .panels__list {
+    display: flex;
+  }
+}
 .panels__list-item {
-  margin-bottom: 3.4375rem;
+  margin-bottom: 0.625rem;
+}
+@media (min-width: 1000px) {
+  .panels__list-item {
+    flex: 1 1 auto;
+  }
 }
 
 .panel {
@@ -512,14 +522,13 @@ button {
   font-weight: 400;
   color: #727272;
 }
-.graphic-panel__title span {
-  text-align: right;
-}
 .graphic-panel__text {
-  text-align: right;
+  display: block;
   font-weight: 700;
   font-size: clamp(1.625rem, 5vw, 2.375rem);
   color: #727272;
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #727272;
 }
 .graphic-panel__action {
   font-weight: 700;
@@ -536,11 +545,12 @@ button {
   margin-bottom: 2.5rem;
   background-color: #f8f6f6;
   box-shadow: 3px 4px 3px 3px #a9a9a9;
+  grid-area: tasks;
 }
 .tasks__top {
   display: flex;
   margin-top: -2.5rem;
-  padding: 0.375rem 1.25rem;
+  padding: 0.375rem clamp(0.125rem, 1vw, 1.25rem);
   background-color: #bda249;
   gap: 0.875rem;
 }
@@ -552,9 +562,13 @@ button {
 .tasks__filter {
   overflow-x: auto;
 }
+.tasks__list {
+  margin: 0;
+}
+
 .filter {
   display: flex;
-  gap: 0.625rem;
+  gap: clamp(0.125rem, 1vw, 0.625rem);
   align-items: center;
   margin: 0;
   list-style: none;
@@ -577,9 +591,10 @@ button {
   align-items: center;
   font-weight: 700;
   font-size: clamp(1rem, 4vw, 1.375rem);
-  padding: 1rem 1.25rem;
+  padding: 1rem clamp(0.625rem, 1vw, 1.25rem);
   color: #fff;
   transition: background-color 400ms;
+  font-size: clamp(0.875rem, 4vw, 1rem);
   cursor: pointer;
 }
 .filter__button:hover {
@@ -595,8 +610,22 @@ button {
   }
 }
 
+@media (min-width: 1000px) {
+  .tables {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "tasks stats";
+    gap: 1.875rem;
+  }
+}
+
 .task {
+  padding: 0.625rem 0;
   list-style: none;
+}
+.task:not(:last-child) {
+  padding-bottom: 0.625rem;
+  border-bottom: 1px solid #727272;
 }
 .task__wrapper {
   display: flex;
@@ -613,6 +642,7 @@ button {
   background-color: #f8f6f6;
   box-shadow: 3px 4px 3px 3px #a9a9a9;
   margin-bottom: 2.5rem;
+  grid-area: stats;
 }
 .stats__top {
   margin-top: -2.5rem;
@@ -641,6 +671,7 @@ button {
   gap: 0.3125rem;
   padding: 0.625rem;
   border-bottom: 1px solid rgb(112, 112, 112);
+  border-bottom: 1px solid #727272;
 }
 .table__name {
   font-size: clamp(1rem, 4vw, 1.3125rem);

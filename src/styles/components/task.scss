@@ -1,5 +1,11 @@
 .task {
+	padding: re-c(10) 0;
 	list-style: none;
+
+	&:not(:last-child) {
+		padding-bottom: re-c(10);
+		border-bottom: 1px solid #727272;
+	}
 
 	&__wrapper {
 		display: flex;

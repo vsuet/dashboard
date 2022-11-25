@@ -3,11 +3,12 @@
 	margin-bottom: re-c(40);
 	background-color: #f8f6f6;
 	box-shadow: 3px 4px 3px 3px #a9a9a9;
+	grid-area: tasks;
 
 	&__top {
 		display: flex;
 		margin-top: re-c(-40);
-		padding: re-c(6) re-c(20);
+		padding: re-c(6) clamp(re-c(2), 1vw, re-c(20));
 		background-color: #bda249;
 		gap: re-c(14);
 	}
@@ -23,5 +24,6 @@
 	}
 
 	&__list {
+		margin: 0;
 	}
 }

@@ -1,0 +1,8 @@
+.tables {
+	@media (min-width: 1000px) {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-areas: "tasks stats";
+		gap: re-c(30);
+	}
+}

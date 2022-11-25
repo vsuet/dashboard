@@ -7,10 +7,18 @@
 			grid-template-columns: repeat(2, 1fr);
 			gap: re-c(20);
 		}
+
+		@media (min-width: 1000px) {
+			display: flex;
+		}
 	}
 
 	&__list-item {
-		margin-bottom: re-c(55);
+		margin-bottom: re-c(10);
+
+		@media (min-width: 1000px) {
+			flex: 1 1 auto;
+		}
 	}
 }
 

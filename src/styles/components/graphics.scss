@@ -44,17 +44,16 @@
 		font-size: clamp(re-c(14), 4vw, re-c(16));
 		font-weight: 400;
 		color: #727272;
-
-		span {
-			text-align: right;
-		}
 	}
 
 	&__text {
-		text-align: right;
+		display: block;
 		font-weight: 700;
 		font-size: clamp(re-c(26), 5vw, re-c(38));
 		color: #727272;
+		padding-bottom: re-c(10);
+
+		border-bottom: 1px solid #727272;
 	}
 
 	&__action {
@@ -62,7 +61,6 @@
 		font-size: clamp(re-c(14), 5vw, re-c(16));
 		color: #727272;
 		transition: color 400ms;
-
 	}
 
 	a.graphic-panel__action:hover {

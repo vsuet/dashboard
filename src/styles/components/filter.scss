@@ -1,6 +1,6 @@
 .filter {
 	display: flex;
-	gap: re-c(10);
+	gap: clamp(re-c(2), 1vw, re-c(10));
 	align-items: center;
 	margin: 0;
 	list-style: none;
@@ -26,9 +26,10 @@
 		align-items: center;
 		font-weight: 700;
 		font-size: clamp(re-c(16), 4vw, re-c(22));
-		padding: re-c(16) re-c(20);
+		padding: re-c(16) clamp(re-c(10), 1vw, re-c(20));
 		color: #fff;
 		transition: background-color 400ms;
+		font-size: clamp(re-c(14), 4vw, re-c(16));
 		cursor: pointer;
 
 		&:hover {
