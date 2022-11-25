@@ -1,14 +1,14 @@
 .row {
     display: flex;
     flex-flow: row nowrap;
-    background-color: rgb(44, 230, 230);
+    background-color: rgb(177, 136, 2);
 }
 .nom{
-    background-color: rgb(44, 230, 230);
+    background-color: rgb(49, 85, 247);
 }
 .pudding {
     padding: 10px;
-    background-color: rgb(44, 230, 230);
+    background-color: rgb(177, 136, 2);
 }
 .mar {
     margin: 0% 3% 0%;
@@ -23,18 +23,19 @@
     margin: 0px 0px 10px ;
 }
 table {
-    border: 1px solid grey;
     width: 100%;
     padding: 10px;
  }
- 
+ tr {
+    border-bottom: 1px solid grey;
+ }
  th {
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
     color: blue;
  }
  
  td {
-    border: 1px solid grey;
+    border-bottom: 1px solid grey;
     text-align: center;
  }
  .menu{
@@ -44,7 +45,7 @@ table {
 
  }
 .lit {
-    background-color: rgb(87, 253, 198);
+    background-color: rgb(241, 199, 106);
 }
 .sidenav {
     height: 100%; 
@@ -53,7 +54,7 @@ table {
     z-index: 1; 
     top: 0; 
     left: 0;
-    background-color: rgb(53, 158, 141);
+    background-color: rgb(141, 137, 131);
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -66,13 +67,37 @@ main {
     display: flex;
     flex-direction: column;
 }
-.pedigry {
+.pice_main {
     padding: 10%;
 }
 .nh1 {
     font-family: monospace;
     
 }
-@media (max-width: 700px) {
-   
+.on_one_line {
+    display: flex;
+    flex: row;
+}
+@media (max-width: 500px) {
+    .sidenav {
+        height: 0%; 
+        width: 0%; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
+        left: 0;
+        background-color: rgb(141, 137, 131);
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    main {
+        margin-left: 0%;
+        padding: 0px 10px;
+        height: 100%;
+    }
+    .open {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
 }
