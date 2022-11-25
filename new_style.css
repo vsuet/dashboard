@@ -1,0 +1,103 @@
+.row {
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: rgb(177, 136, 2);
+}
+.nom{
+    background-color: rgb(49, 85, 247);
+}
+.pudding {
+    padding: 10px;
+    background-color: rgb(177, 136, 2);
+}
+.mar {
+    margin: 0% 3% 0%;
+    justify-content: space-around;
+    position: relative;
+    bottom: 5%;
+}
+.text {
+    padding: 10px;
+}
+.last_bloc {
+    margin: 0px 0px 10px ;
+}
+table {
+    width: 100%;
+    padding: 10px;
+ }
+ tr {
+    border-bottom: 1px solid grey;
+ }
+ th {
+    border-bottom: 1px solid grey;
+    color: blue;
+ }
+ 
+ td {
+    border-bottom: 1px solid grey;
+    text-align: center;
+ }
+ .menu{
+    display: flex;
+    flex-flow: row;
+    width: 100%;
+
+ }
+.lit {
+    background-color: rgb(241, 199, 106);
+}
+.sidenav {
+    height: 100%; 
+    width: 10%; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: rgb(141, 137, 131);
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+main {
+    margin-left: 10%;
+    padding: 0px 10px;
+    height: 100%;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+.pice_main {
+    padding: 10%;
+}
+.nh1 {
+    font-family: monospace;
+    
+}
+.on_one_line {
+    display: flex;
+    flex: row;
+}
+@media (max-width: 500px) {
+    .sidenav {
+        height: 0%; 
+        width: 0%; 
+        position: fixed; 
+        z-index: 1; 
+        top: 0; 
+        left: 0;
+        background-color: rgb(141, 137, 131);
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    main {
+        margin-left: 0%;
+        padding: 0px 10px;
+        height: 100%;
+    }
+    .open {
+        width: 30px;
+        height: 30px;
+        display: block;
+    }
+}
