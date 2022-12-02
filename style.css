@@ -1,0 +1,274 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    position: sticky;
+    align-items: center;
+    gap: 1rem;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 1rem 1rem 1rem 19rem;
+    background: white;
+    color: black;
+    font-size: 1.25rem;
+}
+
+header > span {
+    font-weight: bold;
+}
+
+#hamburger {
+    display: none;
+}
+
+#hamburger ~ label {
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    display: flex;
+    font-size: inherit;
+    gap: 1rem;
+    transition: transform 200ms ease-in-out;
+    position: fixed;
+    flex-direction: column;
+    background: #656767;
+    top: 0;
+    left: 0;
+    width: 15rem;
+    height: 100vh;
+    padding: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #d5d5d5;
+    transition: color 150ms linear;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+main {
+    height: 100%;
+    background: #fcfcfc;
+    padding: 1rem 2rem;
+    margin-left: 17rem;
+}
+
+@media screen and (max-width: 654px) {
+    #hamburger ~ label {
+        display: block;
+        z-index: 999;
+    }
+
+    header {
+        padding-left: 2rem;
+    }
+
+    nav {
+        transform: translateX(-100%);
+        width: unset;
+        right: 40%;
+        font-size: 2rem;
+        padding-top: 4rem;
+        padding-left: 2rem;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    header #hamburger:checked ~ label {
+        color: white;
+    }
+
+    header #hamburger:checked ~ label ~ nav {
+        transform: translateX(0);
+    }
+}
+
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.card-mini {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.gold-bg {
+    background: gold;
+    padding: 32px;
+    margin-top: -32px;
+}
+
+.blue-bg {
+    padding: 32px;
+    background: royalblue;
+    margin-top: -32px;
+}
+
+.red-bg {
+    background: deeppink;
+    padding: 32px;
+    margin-top: -32px;
+}
+
+.green-bg {
+    background: green;
+    padding: 32px;
+    margin-top: -32px;
+}
+
+
+.active img {
+    filter: invert(100%);
+}
+
+.card-mini-footer, .card-medium-footer {
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid #afafaf;
+}
+
+.card-mini-body {
+    margin-top: -64px;
+    margin-left: 200px;
+}
+
+.card-mini-footer img {
+    margin-right: 1rem;
+}
+
+.card-medium {
+    display: flex;
+    flex-direction: column;
+    width: 364px;
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-big {
+    display: flex;
+    flex-direction: column;
+    width: 490px;
+    background: #ffffff;
+    padding: 1rem;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-big-header-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover {
+    background: goldenrod;
+    transition: background 150ms linear;
+}
+
+.card-big-header-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    height: 30px;
+}
+
+.card-big-header-column * {
+    margin: 0;
+}
+
+.body-element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-top: 1px solid #afafaf;
+}
+
+th {
+    color: green;
+}
+
+footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    position: fixed;
+    bottom: 0;
+    left: 240px;
+    right: 0;
+    border-top: 1px solid #afafaf;
+    margin-left: 30px;
+    background: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #afafaf;
+    transition: color 150ms linear;
+}
+
+.no-active, .active {
+    padding: 1.5rem;
+}
+
+.no-active {
+    color: black;
+}
+
+.active {
+    background: deeppink;
+    color: #ffffff;
+    text-align: center;
+}
