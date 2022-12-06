@@ -1,0 +1,105 @@
+@media screen and (min-width: 512px)  {.imgblocks {margin-top: 10px;}}
+@media screen and (min-width: 844px) {.imgblocks {margin-top: 10px;}}
+@media screen and (min-width: 1044px) {.imgblocks {margin-top: 10px;}}
+
+body{
+  margin: 0 0 0 0;
+  display: flex;
+  align-items: stretch;
+}
+
+.leftblock{
+  display: inline-block;
+  min-height: 100vh;
+  box-shadow: 4px 0px 14px 0px rgba(34, 60, 80, 0.2);
+}
+
+.topside1{
+  font-family: 'Fragment Mono', monospace;
+  font-size: 40px;
+
+}
+.topside1 a {
+  padding: 35.545px;
+}
+
+.elements{
+  display: block;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.leftblock .elements:hover{
+  background:red;
+}
+
+.line{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.elements{
+  display: flex;
+}
+
+.elements img{
+  width: 40px;
+  height: 40px;}
+
+.topside2{
+  font-family: 'Fragment Mono', monospace;
+  font-size: 40px;
+}
+.topside2 a{
+  margin-left:35.545px;
+}
+
+.blocks div a{
+  font-size: 20px;
+}
+
+.blocks div{
+  text-align: right;
+}
+
+.blocks{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.middleblock{
+
+  font-family: 'Fragment Mono', monospace;
+  font-size: 20px;
+}
+.imgblocks img{
+  width: 90px;
+  height: 90px;
+}
+.imgblocks{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0px 14px 0px rgba(34, 60, 80, 0.2);
+  font-size: 16px;
+  width: 200px;
+  height: 200px;
+  justify-content: space-around;
+}
+
+.checkbox{
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0px 14px 0px rgba(34, 60, 80, 0.2);
+  margin-top: 70px;}
+
+
+.picturetasks {
+  width: 25px;
+  height: 25px;
+}
