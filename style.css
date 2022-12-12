@@ -1,0 +1,40 @@
+header {
+    background-color: #837A7A;
+}
+.siz_im_log {
+    height: 30px;
+    width: 50px;
+}
+.row {
+    display: flex;
+}
+.img_poz {
+    position: relative;
+    top: 20px;
+}
+.cent {
+    display: flex;
+    justify-content: center;
+    
+}
+.img_opt {
+    height: 270px;
+    width: 170px;
+    border-radius: 40px;
+    margin: 10px 60px ;
+}
+.cent1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.color_1 {
+    background-color: #D9D9D9;
+}
+.mar {
+    margin: 20px 60px;
+}
+.space_bit {
+    display: flex;
+    justify-content: space-between;
+}
