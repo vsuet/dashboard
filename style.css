@@ -1,0 +1,467 @@
+ .picturecentral{
+    border-radius: 8px;
+    width: 8rem ;   
+}
+.picturecentralbottom{
+    border-radius: 8px;
+    width: 2rem   
+}
+.container{
+  display: flex;
+  flex-direction:column;
+  font-family: Arial, sans-serif;
+  width: 400px; 
+  padding: 10px; 
+  border: 2px solid #000; 
+  height: 250px;
+  margin: 30px 10px;
+  box-sizing: border-box;
+  background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg)
+}
+.text{
+    text-align: right;
+}
+.text2{
+    display: flex;
+    flex-direction: row;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.main1{
+    display: flex;
+    flex-direction: row;
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+}
+body{
+    background-image: url(https://oir.mobi/uploads/posts/2021-03/1616545253_20-p-rozovii-mramor-fon-20.jpg)
+}
+h1 { 
+    font-size:30px;
+}
+.picturehistogram{
+    border-radius: 8px;
+    width: 13rem    
+}
+.container1{
+    display: flex;
+    flex-direction:column;
+    font-family: Arial, sans-serif; 
+    width: 500px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 400px;
+    margin: 60px 25px;
+    box-sizing: border-box;
+    background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+}
+.picturetasks{
+    border-radius: 5px;
+    width: 3.5rem   
+}
+.tasks{
+    display: flex;
+    flex-direction: row;  
+}
+.tasks2{
+    display: flex;
+    flex-direction: row;  
+    margin: 5px 30px 30px  30px; 
+}
+.container2{
+    display: flex;
+    flex-direction:column;
+    font-family: Arial, sans-serif;
+    width: 650px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 500px;
+    margin: 60px 100px ;
+    box-sizing: border-box;
+    background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+}
+.tasks3{
+    display: flex;
+    flex-direction: row;    
+}
+.p { 
+    font-size:20px;
+}
+.footer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row; 
+    background-image: url( https://chameleons.in.ua/tmp/cache/images/1c/384/1c3844ae7396de864b1f16b8634919ab.jpg)  
+}
+.footertext{
+    margin: 5px 400px 20px  30px; 
+}
+th{
+    font-size:25px;
+}
+td{
+    font-size:25px;
+    padding: 20px;
+  padding-left: 30px;
+}
+.pictureleft{
+    border-radius: 8px;
+    width: 3rem 
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+}
+.item1{
+    display: flex ;
+    flex-direction: row;
+}
+  .wrap > nav {
+    width: 10%;
+    background-image: url(https://chameleons.in.ua/tmp/cache/images/1c/384/1c3844ae7396de864b1f16b8634919ab.jpg)
+}
+.p{
+    font-size:22px;
+}
+@media (min-width: 800px) and (max-width: 1000px) {
+    body{
+        font-size: 20px;
+    } 
+    .container{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif;
+        width: 500px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 300px;
+        margin: 30px 30px;
+        box-sizing: border-box;
+        background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg)
+    } 
+    .main1{
+        display: flex;
+        flex-direction: column;   
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .main2{
+        display: flex;
+        flex-direction: row;
+    }
+    .container1{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif; 
+        width: 450px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 500px;
+        margin: 60px 5px;
+        box-sizing: border-box;
+        background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+    }
+.picturecentral{
+    border-radius: 8px;
+    width: 10rem ;   
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    font-family: Arial, sans-serif;
+    width: 750px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 500px;
+    margin: 60px 400px ;
+    box-sizing: border-box;
+    background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+}
+p { 
+    font-size:25px; 
+}
+.footertext{
+    margin: 5px 300px 20px  30px; 
+}
+.wrap > nav {
+    width: 40%;
+    background-image: url(https://chameleons.in.ua/tmp/cache/images/1c/384/1c3844ae7396de864b1f16b8634919ab.jpg)
+}
+}
+@media (min-width: 650px) and (max-width: 800px) {
+    body{
+        font-size: 30px;
+    } 
+    .container{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif;
+        width: 500px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 300px;
+        margin: 30px 130px;
+        box-sizing: border-box;
+        background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg) 
+    } 
+    .main1{
+        display: flex;
+        flex-direction: column;
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .main2{
+        display: flex;
+        flex-direction: row;
+    }
+    .container1{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif; 
+        width: 450px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 500px;
+        margin: 60px 20px;
+        box-sizing: border-box;
+        background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+    }
+.picturecentral{
+    border-radius: 8px;
+    width: 10rem ;   
+}
+.container2{
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    font-family: Arial, sans-serif;
+    width: 750px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 500px;
+    margin: 60px 400px ;
+    box-sizing: border-box;
+    background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+}
+nav{
+    display:none;
+}
+p { 
+    font-size:25px; 
+}
+.footertext{
+    margin: 5px 300px 20px  30px; 
+}
+}
+@media (min-width: 500px) and (max-width: 650px) {
+    body{
+        font-size: 40px;
+    } 
+    .container{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif;
+        width: 500px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 300px;
+        margin: 30px 130px;
+        box-sizing: border-box;
+        background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg)   
+    } 
+    .main1{
+        display: flex;
+        flex-direction: column;    
+    }
+    .main{
+        display: flex;
+        flex-wrap: wrap;    
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif; 
+        width: 650px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 500px;
+        margin: 60px 420px;
+        box-sizing: border-box;
+        background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+    }
+.picturecentral{
+    border-radius: 8px;
+    width: 10rem ;   
+}
+.container2{
+    display: flex;
+    flex-direction:column;
+    font-family: Arial, sans-serif;
+    width: 850px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 600px;
+    margin: 60px 350px ;
+    box-sizing: border-box;
+    background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+}
+nav{
+    display:none;
+}
+p { 
+    font-size:25px; 
+}
+.footertext{
+    margin: 5px 280px 20px  30px; 
+}
+}
+@media (max-width: 500px) {
+    body{
+        font-size: 40px;
+    } 
+    .container{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif;
+        width: 600px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 400px;
+        margin: 30px 450px;
+        box-sizing: border-box;
+        background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg)  
+    } 
+    .main1{
+        display: flex;
+        flex-direction: column;    
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;    
+    }
+    .main2{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif; 
+        width: 650px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 500px;
+        margin: 60px 420px;
+        box-sizing: border-box;
+        background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+    }
+.picturecentral{
+    border-radius: 8px;
+    width: 10rem ;   
+}
+.container2{
+    display: flex;
+    flex-direction:column;
+    font-family: Arial, sans-serif;
+    width: 850px; 
+    padding: 10px; 
+    border: 2px solid #000; 
+    height: 600px;
+    margin: 60px 350px ;
+    box-sizing: border-box;
+    background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+}
+nav{
+    display:none;
+}
+p { 
+    font-size:25px; 
+}
+.footertext{
+    margin: 5px 280px 20px  30px; 
+}
+.p{
+    font-size:26px;
+}
+}
+@media (min-width: 1000px){
+    .container{
+      display: flex;
+      flex-direction:column;
+      font-family: Arial, sans-serif;
+      width: 400px; 
+      padding: 10px; 
+      border: 2px solid #000; 
+      height: 250px;
+      margin: 30px 10px;
+      box-sizing: border-box;
+      background-image: url(https://pibig.info/uploads/posts/2022-08/1659392859_1-pibig-info-p-mramornii-fon-rozovii-krasivo-1.jpg)
+    }
+    .main{
+        display: flex;
+        flex-direction: row;
+    }
+    .main1{
+        display: flex;
+        flex-direction: row;
+    }
+    .main2{
+        display: flex;
+        flex-direction: row;
+    }
+    h1 { 
+        font-size:30px;
+    }
+    .container1{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif; 
+        width: 500px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 400px;
+        margin: 60px 25px;
+        box-sizing: border-box;
+        background-image: url(https://phonoteka.org/uploads/posts/2022-09/1663878272_1-phonoteka-org-p-oboi-rozovii-mramor-pinterest-1.jpg)
+    }
+    .container2{
+        display: flex;
+        flex-direction:column;
+        font-family: Arial, sans-serif;
+        width: 650px; 
+        padding: 10px; 
+        border: 2px solid #000; 
+        height: 500px;
+        margin: 60px 100px ;
+        box-sizing: border-box;
+        background-image: url(https://perspolis-stone.ru/wp-content/uploads/2021/05/%D0%A0%D0%BE%D0%B7%D0%BE%D0%B2%D1%8B%D0%B9-%D0%BC%D1%80%D0%B0%D0%BC%D0%BE%D1%80-3.jpg)
+    }
+    .p { 
+        font-size:20px;
+    }
+    .item1{
+        display: flex ;
+        flex-direction: row;
+      }
+      .wrap > nav {
+        width: 20%;
+        background-image: url(https://chameleons.in.ua/tmp/cache/images/1c/384/1c3844ae7396de864b1f16b8634919ab.jpg)
+    }
+    .p{
+        font-size:22px;
+    }
+}
